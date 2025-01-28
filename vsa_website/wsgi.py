@@ -1,5 +1,5 @@
 """
-WSGI config for web-student-org-explorer project.
+WSGI config for vsa_website project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 
@@ -11,6 +11,6 @@ import os
 
 from django.core.wsgi import get_wsgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'web-student-org-explorer.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'vsa_website.settings')
 
 application = get_wsgi_application()
