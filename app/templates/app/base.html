@@ -40,10 +40,9 @@
   <script src="{% static 'app/js/myscript.js' %}"></script>
   <script src="{% static 'app/js/owl.carousel.min.js' %}"></script>
   <script src="{% static 'app/js/all.min.js' %}"></script>
-
 </head>
-<body class="bg-white">
 
+<body class="bg-white">
   <!-- ========== TOP ROW ========== -->
   <header class="py-3">
     <div class="container d-flex justify-content-between align-items-center">
@@ -67,7 +66,7 @@
         </a>
 
         <!-- Dark Mode Icon -->
-        <a href="#" class="nav-link text-dark me-3">
+        <a href="#" class="nav-link text-dark me-3" id="dark-mode-toggle">
           <i class="fas fa-moon fs-5"></i>
         </a>
 
@@ -175,7 +174,7 @@
         </li>
         <!-- Email -->
         <li class="nav-item">
-          <a class="nav-link text-dark" href="unccvsa89@gmail.com" title="Email">
+          <a class="nav-link text-dark" href="mailto:unccvsa89@gmail.com" title="Email">
             <i class="fas fa-envelope fs-5"></i>
           </a>
         </li>
@@ -211,5 +210,34 @@
   <script src="{% static 'app/js/myscript.js' %}"></script>
   <script src="{% static 'app/js/owl.carousel.min.js' %}"></script>
   <script src="{% static 'app/js/all.min.js' %}"></script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const darkModeToggle = document.getElementById("dark-mode-toggle");
+        const body = document.body;
+    
+        // Check Local Storage for dark mode preference
+        if (localStorage.getItem("dark-mode") === "enabled") {
+            body.classList.add("dark-mode");
+            darkModeToggle.innerHTML = '<i class="fas fa-sun fs-5"></i>'; // Sun icon for light mode
+        }
+    
+        // Toggle dark mode when the icon is clicked
+        darkModeToggle.addEventListener("click", function (e) {
+            e.preventDefault();
+            body.classList.toggle("dark-mode");
+    
+            // Save preference in Local Storage
+            if (body.classList.contains("dark-mode")) {
+                localStorage.setItem("dark-mode", "enabled");
+                darkModeToggle.innerHTML = '<i class="fas fa-sun fs-5"></i>'; // Sun icon
+            } else {
+                localStorage.setItem("dark-mode", "disabled");
+                darkModeToggle.innerHTML = '<i class="fas fa-moon fs-5"></i>'; // Moon icon
+            }
+        });
+    });
+  </script>
+
 </body>
 </html>
