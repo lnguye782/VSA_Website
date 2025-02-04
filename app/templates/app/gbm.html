@@ -1,0 +1,92 @@
+{% extends "app/base.html" %}
+{% load static %}
+       
+{% block gbm-content %}
+<div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <!-- Title is optional; you can remove this if you don't need a title -->
+          <h5 class="modal-title" id="modalImageTitle">Photo</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body text-center">
+          <!-- We'll insert the large image src dynamically -->
+          <img id="modalImage" src="#" class="img-fluid" alt="Fullsize" />
+        </div>
+      </div>
+    </div>
+</div>
+
+<div class="row" style="width:100%">
+    <div class="col-lg-4">
+        <img 
+            class="thumbnail" 
+            src="{% static 'app/images/gbm/tet.png' %}"
+            alt="Tết Lunar New Year"
+            style="cursor:pointer; max-width:100%;"
+
+            data-bs-toggle="modal"
+            data-bs-target="#imageModal"
+
+            onclick="openImageModal(this)"
+        >
+        <div class="box-element product">
+            <h6><strong>TẾT LUNAR NEW YEAR</strong></h6>
+            <hr>
+            <!-- <button class="btn btn-outline-secondary add-btn">Event</button> -->
+            <div class="text-center">
+                <a class="btn btn-outline-success" href="https://drive.google.com/drive/folders/1_9RHEMgjHrI5iZ7Fc0zEYV5ZadxTa6Jb?usp=sharing">
+                    Pictures
+                </a>
+            </div>
+            <!-- <h4 style="display: inline-block; float: right"><strong>...</strong></h4> -->
+        </div>
+    </div>
+  
+    <div class="col-lg-4">
+        <img 
+            class="thumbnail" 
+            src="{% static 'app/images/gbm/maid-cafe.png' %}"
+            alt="Maid Cafe"
+            style="cursor:pointer; max-width:100%;"
+
+            data-bs-toggle="modal"
+            data-bs-target="#imageModal"
+
+            onclick="openImageModal(this)"
+        >
+        <div class="box-element product">
+            <h6><strong>MAID CAFE</strong></h6>
+            <hr>
+            <!-- <button class="btn btn-outline-secondary add-btn">Event</button> -->
+            <div class="text-center">
+                <a class="btn btn-outline-success" href="https://drive.google.com/drive/folders/18_cWJaGjlhqGBMsDgZ3AmweP1IBOsL6s?usp=sharing">
+                    Pictures
+                </a>
+            </div>
+            <!-- <h4 style="display: inline-block; float: right"><strong>...</strong></h4> -->
+        </div>
+    </div>
+</div>
+
+<br />
+
+<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+
+<script>
+    function openImageModal(imgElement) {
+      // Grab the 'src' from the clicked thumbnail
+      const thumbnailSrc = imgElement.src;
+  
+      // Find the large <img> in the modal
+      const modalImage = document.getElementById('modalImage');
+  
+      // Update the modal's image source
+      modalImage.src = thumbnailSrc;
+  
+      // (Optional) Update title or alt text
+      document.getElementById('modalImageTitle').innerText = imgElement.alt || 'Photo';
+    }
+</script>
+{% endblock gbm-content %}

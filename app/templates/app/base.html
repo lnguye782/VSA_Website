@@ -18,9 +18,9 @@
 
   <!-- Font Awesome (for icons) -->
   <link 
+    rel="stylesheet" 
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-    rel="stylesheet"
-  />
+  >
 
   <link href="{% static 'app/css/style.css' %}" rel="stylesheet" />
   <link href="{% static 'app/css/owl.carousel.min.css' %}" rel="stylesheet" />
@@ -47,6 +47,7 @@
   <!-- ========== TOP ROW ========== -->
   <header class="py-3">
     <div class="container d-flex justify-content-between align-items-center">
+      
       <!-- Left: LOGO -->
       <a href="{% url 'home' %}" class="d-flex align-items-center text-decoration-none">
         <img 
@@ -80,9 +81,10 @@
     </div>
   </header>
 
-  <!-- ========== SECOND ROW: Main Nav + Right Icons ========== -->
+  <!-- ========== SECOND ROW ========== -->
   <nav class="border-bottom">
     <div class="container d-flex justify-content-between align-items-center py-3">
+      
       <!-- Left: Navigation Menu -->
       <ul class="nav">
         <li class="nav-item">
@@ -90,7 +92,20 @@
             Home
           </a>
         </li>
-        <!-- Organizations dropdown -->
+
+        <li class="nav-item">
+          <a class="nav-link px-3 text-dark" href="{% url 'eboard' %}">
+            Eboard
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link px-3 text-dark" href="{% url 'gbm' %}">
+            GBM
+          </a>
+        </li>
+
+        <!-- dropdown
         <li class="nav-item dropdown">
           <a 
             class="nav-link dropdown-toggle px-3 text-dark" 
@@ -99,25 +114,28 @@
             data-bs-toggle="dropdown" 
             aria-expanded="false"
           >
-            Organizations
+            ...
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Filipino-American Student Union</a></li>
-            <li><a class="dropdown-item" href="#">Hmong Student Association</a></li>
-            <li><a class="dropdown-item" href="#">Korean-American Student Association</a></li>
-            <li><a class="dropdown-item" href="#">Southeast Asian Student Association</a></li>
-            <li><a class="dropdown-item" href="#">Vietnamese Student Association</a></li>
+            <li><a class="dropdown-item" href="#">...</a></li>
             <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
           </ul>
-        </li>
+        </li> -->
+
         <li class="nav-item">
-          <a class="nav-link px-3 text-dark" href="#">
-            Live Event
+          <a class="nav-link px-3 text-dark" href="{% url 'sponsor' %}">
+            Sponsor
           </a>
         </li>
+
         <li class="nav-item">
-          <a class="nav-link px-3 text-dark" href="#">
+          <a class="nav-link px-3 text-dark" href="{% url 'membership' %}">
+            Membership
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link px-3 text-dark" href="{% url 'aboutus' %}">
             About Us
           </a>
         </li>
@@ -127,19 +145,37 @@
       <ul class="nav">
         <!-- Instagram -->
         <li class="nav-item me-3">
-          <a class="nav-link text-dark" href="#" title="Instagram">
+          <a class="nav-link text-dark" href="https://instagram.com/unccvsa" title="Instagram">
             <i class="fab fa-instagram fs-5"></i>
+          </a>
+        </li>
+        <!-- TikTok -->
+        <li class="nav-item me-3">
+          <a class="nav-link text-dark" href="https://tiktok.com/@uncc_vsa" title="TikTok">
+            <i class="fab fa-tiktok fs-5"></i>
           </a>
         </li>
         <!-- YouTube -->
         <li class="nav-item me-3">
-          <a class="nav-link text-dark" href="#" title="YouTube">
+          <a class="nav-link text-dark" href="https://www.youtube.com/@unccvsa" title="YouTube">
             <i class="fab fa-youtube fs-5"></i>
           </a>
         </li>
-        <!-- Gmail (using Google icon or envelope) -->
+        <!-- Discord -->
+        <li class="nav-item me-3">
+          <a class="nav-link text-dark" href="https://discord.gg/UNCCVSA" title="Discord">
+            <i class="fab fa-discord fs-5"></i>
+          </a>
+        </li>
+        <!-- Fackbook -->
+        <li class="nav-item me-3">
+          <a class="nav-link text-dark" href="https://www.facebook.com/UNCCVSA" title="Facebook">
+            <i class="fab fa-facebook fs-5"></i>
+          </a>
+        </li>
+        <!-- Email -->
         <li class="nav-item">
-          <a class="nav-link text-dark" href="#" title="Gmail">
+          <a class="nav-link text-dark" href="unccvsa89@gmail.com" title="Email">
             <i class="fas fa-envelope fs-5"></i>
           </a>
         </li>
@@ -151,6 +187,21 @@
   <!-- ========== MAIN BODY ========== -->
   {% block main-content %}
   {% endblock main-content %}
+
+  {% block eboard-content %}
+  {% endblock eboard-content %}
+
+  {% block gbm-content %}
+  {% endblock gbm-content %}
+
+  {% block sponsor-content %}
+  {% endblock sponsor-content %}
+
+  {% block membership-content %}
+  {% endblock membership-content %}
+
+  {% block aboutus-content %}
+  {% endblock aboutus-content %}
 
   <!-- ========== FOOTER ========== -->
   <footer class="container-fluid bg-success text-center p-2 mt-5" style="color: white;">

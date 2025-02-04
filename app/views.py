@@ -15,5 +15,20 @@ def search(request):
     if request.method == "POST":
         searched = request.POST["searched"]
         #keys = Product.objects.filter(name__contains = searched)
-    #return render(request, 'app/search.html', {"searched": searched, "keys":keys})
+        #return render(request, 'app/search.html', {"searched": searched, "keys":keys})
         return render(request, 'app/search.html', {"searched": searched})
+    
+def eboard(request):
+    return render(request, 'app/eboard.html')
+
+def gbm(request):
+    return render(request, 'app/gbm.html')
+
+def sponsor(request):
+    return render(request, 'app/sponsor.html')
+
+def membership(request):
+    return render(request, 'app/membership.html')
+
+def aboutus(request):
+    return render(request, 'app/aboutus.html')
