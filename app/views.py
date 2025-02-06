@@ -10,16 +10,12 @@ from django.contrib import messages
 # Create your views here.
 def home(request):
     return render(request, 'app/home.html')
-
-def search(request):
-    if request.method == "POST":
-        searched = request.POST["searched"]
-        #keys = Product.objects.filter(name__contains = searched)
-        #return render(request, 'app/search.html', {"searched": searched, "keys":keys})
-        return render(request, 'app/search.html', {"searched": searched})
     
 def eboard(request):
     return render(request, 'app/eboard.html')
+
+def intern(request):
+    return render(request, 'app/intern.html')
 
 def gbm(request):
     return render(request, 'app/gbm.html')
@@ -32,3 +28,10 @@ def membership(request):
 
 def aboutus(request):
     return render(request, 'app/aboutus.html')
+
+def search(request):
+    if request.method == "POST":
+        searched = request.POST["searched"]
+        #keys = Product.objects.filter(name__contains = searched)
+        #return render(request, 'app/search.html', {"searched": searched, "keys":keys})
+        return render(request, 'app/search.html', {"searched": searched})

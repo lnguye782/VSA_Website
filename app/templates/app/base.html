@@ -99,6 +99,12 @@
         </li>
 
         <li class="nav-item">
+          <a class="nav-link px-3 text-dark" href="{% url 'intern' %}">
+            Intern
+          </a>
+        </li>
+
+        <li class="nav-item">
           <a class="nav-link px-3 text-dark" href="{% url 'gbm' %}">
             GBM
           </a>
@@ -189,6 +195,9 @@
 
   {% block eboard-content %}
   {% endblock eboard-content %}
+
+  {% block intern-content %}
+  {% endblock intern-content %}
 
   {% block gbm-content %}
   {% endblock gbm-content %}

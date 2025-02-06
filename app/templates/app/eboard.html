@@ -5,41 +5,15 @@
 <div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-lg">
       <div class="modal-content">
-        <div class="modal-header">
-          <!-- Title is optional; you can remove this if you don't need a title -->
-          <h5 class="modal-title" id="modalImageTitle">Photo</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
         <div class="modal-body text-center">
-          <!-- We'll insert the large image src dynamically -->
-          <img id="modalImage" src="#" class="img-fluid" alt="Fullsize" />
+          <!-- Insert the large image src dynamically -->
+          <img id="modalImage" src="#" class="img-fluid" alt="Fullsize" style="max-width: 90vw; max-height: 80vh;" />
         </div>
       </div>
     </div>
 </div>
 
 <div class="row" style="width:100%">
-    <div class="col-lg-4">
-        <img 
-            class="thumbnail" 
-            src="{% static 'app/images/eboard/dylantr.jpg' %}"
-            alt="Dylan Truong"
-            style="cursor:pointer; max-width:100%;"
-
-            data-bs-toggle="modal"
-            data-bs-target="#imageModal"
-
-            onclick="openImageModal(this)"
-        >
-        <div class="box-element product">
-            <h6><strong>INTERNAL VICE PRESIDENT</strong></h6>
-            <hr>
-            <!-- <button class="btn btn-outline-secondary add-btn">Event</button> -->
-            <a class="btn btn-outline-success" href="https://www.instagram.com/dylan.t.920/">Contact Me</a>
-            <h4 style="display: inline-block; float: right"><strong>Dylan Truong</strong></h4>
-        </div>
-    </div>
-  
     <div class="col-lg-4">
         <img 
             class="thumbnail" 
@@ -52,12 +26,33 @@
 
             onclick="openImageModal(this)"
         >
-        <div class="box-element product">
+        <div class="box-element">
             <h6><strong>PRESIDENT</strong></h6>
             <hr>
             <!-- <button class="btn btn-outline-secondary add-btn">Event</button> -->
-            <a class="btn btn-outline-success" href="https://www.instagram.com/dylan2nguyen_/">Contact Me</a>
+            <a class="btn btn-outline-success" href="https://www.instagram.com/dylan2nguyen_/">Connect</a>
             <h4 style="display: inline-block; float: right"><strong>Dylan Nguyen</strong></h4>
+        </div>
+    </div>
+
+    <div class="col-lg-4">
+        <img 
+            class="thumbnail" 
+            src="{% static 'app/images/eboard/dylantr.jpg' %}"
+            alt="Dylan Truong"
+            style="cursor:pointer; max-width:100%;"
+
+            data-bs-toggle="modal"
+            data-bs-target="#imageModal"
+
+            onclick="openImageModal(this)"
+        >
+        <div class="box-element">
+            <h6><strong>INTERNAL VICE PRESIDENT</strong></h6>
+            <hr>
+            <!-- <button class="btn btn-outline-secondary add-btn">Event</button> -->
+            <a class="btn btn-outline-success" href="https://www.instagram.com/dylan.t.920/">Connect</a>
+            <h4 style="display: inline-block; float: right"><strong>Dylan Truong</strong></h4>
         </div>
     </div>
 
@@ -73,11 +68,11 @@
 
             onclick="openImageModal(this)"
         >
-        <div class="box-element product">
+        <div class="box-element">
             <h6><strong>EXTERNAL VICE PRESIDENT</strong></h6>
             <hr>
             <!-- <button class="btn btn-outline-secondary add-btn">Event</button> -->
-            <a class="btn btn-outline-success" href="https://www.instagram.com/maaanh.i/">Contact Me</a>
+            <a class="btn btn-outline-success" href="https://www.instagram.com/maaanh.i/">Connect</a>
             <h4 style="display: inline-block; float: right"><strong>Anh Nguyen</strong></h4>
         </div>
     </div>
@@ -98,11 +93,11 @@
 
             onclick="openImageModal(this)"
         >
-        <div class="box-element product">
+        <div class="box-element">
             <h6><strong>SECRETARY</strong></h6>
             <hr>
             <!-- <button class="btn btn-outline-secondary add-btn">Event</button> -->
-            <a class="btn btn-outline-success" href="https://www.instagram.com/jo.saan/">Contact Me</a>
+            <a class="btn btn-outline-success" href="https://www.instagram.com/jo.saan/">Connect</a>
             <h4 style="display: inline-block; float: right"><strong>Jon Sanchez</strong></h4>
         </div>
     </div>
@@ -119,12 +114,12 @@
 
             onclick="openImageModal(this)"
         >
-        <div class="box-element product">
+        <div class="box-element">
             <h6><strong>TREASURER</strong></h6>
             <hr>
             <!-- <button class="btn btn-outline-secondary add-btn">Event</button> -->
-            <a class="btn btn-outline-success" href="https://www.instagram.com/steven_lang17/">Contact Me</a>
-            <h4 style="display: inline-block; float: right"><strong>Steven Nguyen</strong></h4>
+            <a class="btn btn-outline-success" href="https://www.instagram.com/steven_lang17/">Connect</a>
+            <h4 style="display: inline-block; float: right"><strong>Steven Lang</strong></h4>
         </div>
     </div>
 
@@ -140,11 +135,11 @@
 
             onclick="openImageModal(this)"
         >
-        <div class="box-element product">
+        <div class="box-element">
             <h6><strong>MEDIA DIRECTOR</strong></h6>
             <hr>
             <!-- <button class="btn btn-outline-secondary add-btn">Event</button> -->
-            <a class="btn btn-outline-success" href="https://www.instagram.com/jadenluaa/">Contact Me</a>
+            <a class="btn btn-outline-success" href="https://www.instagram.com/jadenluaa/">Connect</a>
             <h4 style="display: inline-block; float: right"><strong>Jaden Luanglath</strong></h4>
         </div>
     </div>
@@ -165,11 +160,11 @@
 
             onclick="openImageModal(this)"
         >
-        <div class="box-element product">
+        <div class="box-element">
             <h6><strong>CO-MARKETING DIRECTOR</strong></h6>
             <hr>
             <!-- <button class="btn btn-outline-secondary add-btn">Event</button> -->
-            <a class="btn btn-outline-success" href="https://www.instagram.com/angelica.calumba126/">Contact Me</a>
+            <a class="btn btn-outline-success" href="https://www.instagram.com/angelica.calumba126/">Connect</a>
             <h4 style="display: inline-block; float: right"><strong>Angelica Calumba</strong></h4>
         </div>
     </div>
@@ -186,11 +181,11 @@
 
             onclick="openImageModal(this)"
         >
-        <div class="box-element product">
+        <div class="box-element">
             <h6><strong>CO-MARKETING DIRECTOR</strong></h6>
             <hr>
             <!-- <button class="btn btn-outline-secondary add-btn">Event</button> -->
-            <a class="btn btn-outline-success" href="https://www.instagram.com/nguyen._.kay/">Contact Me</a>
+            <a class="btn btn-outline-success" href="https://www.instagram.com/nguyen._.kay/">Connect</a>
             <h4 style="display: inline-block; float: right"><strong>Kayla Nguyen</strong></h4>
         </div>
     </div>
@@ -207,11 +202,11 @@
 
             onclick="openImageModal(this)"
         >
-        <div class="box-element product">
+        <div class="box-element">
             <h6><strong>CO-DESIGN CHAIR</strong></h6>
             <hr>
             <!-- <button class="btn btn-outline-secondary add-btn">Event</button> -->
-            <a class="btn btn-outline-success" href="https://www.instagram.com/daisyy_.h/">Contact Me</a>
+            <a class="btn btn-outline-success" href="https://www.instagram.com/daisyy_.h/">Connect</a>
             <h4 style="display: inline-block; float: right"><strong>Daisy Ho</strong></h4>
         </div>
     </div>
@@ -232,11 +227,11 @@
 
             onclick="openImageModal(this)"
         >
-        <div class="box-element product">
+        <div class="box-element">
             <h6><strong>CO-DESIGN CHAIR</strong></h6>
             <hr>
             <!-- <button class="btn btn-outline-secondary add-btn">Event</button> -->
-            <a class="btn btn-outline-success" href="https://www.instagram.com/hyhy.exe/">Contact Me</a>
+            <a class="btn btn-outline-success" href="https://www.instagram.com/hyhy.exe/">Connect</a>
             <h4 style="display: inline-block; float: right"><strong>Hy Nguyen</strong></h4>
         </div>
     </div>
@@ -253,11 +248,11 @@
 
             onclick="openImageModal(this)"
         >
-        <div class="box-element product">
+        <div class="box-element">
             <h6><strong>CO-CULTURE CHAIR</strong></h6>
             <hr>
             <!-- <button class="btn btn-outline-secondary add-btn">Event</button> -->
-            <a class="btn btn-outline-success" href="https://www.instagram.com/celinatruongg/">Contact Me</a>
+            <a class="btn btn-outline-success" href="https://www.instagram.com/celinatruongg/">Connect</a>
             <h4 style="display: inline-block; float: right"><strong>Celina Truong</strong></h4>
         </div>
     </div>
@@ -274,78 +269,11 @@
 
             onclick="openImageModal(this)"
         >
-        <div class="box-element product">
+        <div class="box-element">
             <h6><strong>CO-CULTURE CHAIR</strong></h6>
             <hr>
             <!-- <button class="btn btn-outline-secondary add-btn">Event</button> -->
-            <a class="btn btn-outline-success" href="https://www.instagram.com/tapeuge/">Contact Me</a>
-            <h4 style="display: inline-block; float: right"><strong>Eugene Nguyen</strong></h4>
-        </div>
-    </div>
-</div>
-
-<br />
-
-<div class="row" style="width:100%">
-    <div class="col-lg-4">
-        <img 
-            class="thumbnail" 
-            src="{% static 'app/images/eboard/hy.jpg' %}"
-            alt="Hy Nguyen"
-            style="cursor:pointer; max-width:100%;"
-
-            data-bs-toggle="modal"
-            data-bs-target="#imageModal"
-
-            onclick="openImageModal(this)"
-        >
-        <div class="box-element product">
-            <h6><strong>CO-DESIGN CHAIR</strong></h6>
-            <hr>
-            <!-- <button class="btn btn-outline-secondary add-btn">Event</button> -->
-            <a class="btn btn-outline-success" href="https://www.instagram.com/hyhy.exe/">Contact Me</a>
-            <h4 style="display: inline-block; float: right"><strong>Hy Nguyen</strong></h4>
-        </div>
-    </div>
-
-    <div class="col-lg-4">
-        <img 
-            class="thumbnail" 
-            src="{% static 'app/images/eboard/celina.jpg' %}"
-            alt="Celina Truong"
-            style="cursor:pointer; max-width:100%;"
-
-            data-bs-toggle="modal"
-            data-bs-target="#imageModal"
-
-            onclick="openImageModal(this)"
-        >
-        <div class="box-element product">
-            <h6><strong>CO-CULTURE CHAIR</strong></h6>
-            <hr>
-            <!-- <button class="btn btn-outline-secondary add-btn">Event</button> -->
-            <a class="btn btn-outline-success" href="https://www.instagram.com/celinatruongg/">Contact Me</a>
-            <h4 style="display: inline-block; float: right"><strong>Celina Truong</strong></h4>
-        </div>
-    </div>
-
-    <div class="col-lg-4">
-        <img 
-            class="thumbnail" 
-            src="{% static 'app/images/eboard/eugene.jpg' %}"
-            alt="Eugene Nguyen"
-            style="cursor:pointer; max-width:100%;"
-
-            data-bs-toggle="modal"
-            data-bs-target="#imageModal"
-
-            onclick="openImageModal(this)"
-        >
-        <div class="box-element product">
-            <h6><strong>CO-CULTURE CHAIR</strong></h6>
-            <hr>
-            <!-- <button class="btn btn-outline-secondary add-btn">Event</button> -->
-            <a class="btn btn-outline-success" href="https://www.instagram.com/tapeuge/">Contact Me</a>
+            <a class="btn btn-outline-success" href="https://www.instagram.com/tapeuge/">Connect</a>
             <h4 style="display: inline-block; float: right"><strong>Eugene Nguyen</strong></h4>
         </div>
     </div>
@@ -366,13 +294,17 @@
 
             onclick="openImageModal(this)"
         >
-        <div class="box-element product">
+        <div class="box-element">
             <h6><strong>COMMUNITY OUTREACH CHAIR</strong></h6>
             <hr>
             <!-- <button class="btn btn-outline-secondary add-btn">Event</button> -->
-            <a class="btn btn-outline-success" href="https://www.instagram.com/minsebong/">Contact Me</a>
+            <a class="btn btn-outline-success" href="https://www.instagram.com/minsebong/">Connect</a>
             <h4 style="display: inline-block; float: right"><strong>Minh Nguyen</strong></h4>
         </div>
+    </div>
+
+    <div class="col-lg-4">
+    
     </div>
 
     <div class="col-lg-4">
@@ -387,100 +319,12 @@
 
             onclick="openImageModal(this)"
         >
-        <div class="box-element product">
+        <div class="box-element">
             <h6><strong>EVENT COORDINATOR</strong></h6>
             <hr>
             <!-- <button class="btn btn-outline-secondary add-btn">Event</button> -->
-            <a class="btn btn-outline-success" href="https://www.instagram.com/lvn_9974/">Contact Me</a>
+            <a class="btn btn-outline-success" href="https://www.instagram.com/lvn_9974/">Connect</a>
             <h4 style="display: inline-block; float: right"><strong>Long Nguyen</strong></h4>
-        </div>
-    </div>
-
-    <div class="col-lg-4">
-        <img 
-            class="thumbnail" 
-            src="{% static 'app/images/eboard/adrian.png' %}"
-            alt="Adrian Dao"
-            style="cursor:pointer; max-width:100%;"
-
-            data-bs-toggle="modal"
-            data-bs-target="#imageModal"
-
-            onclick="openImageModal(this)"
-        >
-        <div class="box-element product">
-            <h6><strong>INTERN</strong></h6>
-            <hr>
-            <!-- <button class="btn btn-outline-secondary add-btn">Event</button> -->
-            <a class="btn btn-outline-success" href="https://www.instagram.com/adriandao26/">Contact Me</a>
-            <h4 style="display: inline-block; float: right"><strong>Adrian Dao</strong></h4>
-        </div>
-    </div>
-</div>
-
-<br />
-
-<div class="row" style="width:100%">
-    <div class="col-lg-4">
-        <img 
-            class="thumbnail" 
-            src="{% static 'app/images/eboard/angela.png' %}"
-            alt="Angela Tran"
-            style="cursor:pointer; max-width:100%;"
-
-            data-bs-toggle="modal"
-            data-bs-target="#imageModal"
-
-            onclick="openImageModal(this)"
-        >
-        <div class="box-element product">
-            <h6><strong>INTERN</strong></h6>
-            <hr>
-            <!-- <button class="btn btn-outline-secondary add-btn">Event</button> -->
-            <a class="btn btn-outline-success" href="https://www.instagram.com/aangelatrann/">Contact Me</a>
-            <h4 style="display: inline-block; float: right"><strong>Angela Tran</strong></h4>
-        </div>
-    </div>
-
-    <div class="col-lg-4">
-        <img 
-            class="thumbnail" 
-            src="{% static 'app/images/eboard/christina.png' %}"
-            alt="Christina Nguyen"
-            style="cursor:pointer; max-width:100%;"
-
-            data-bs-toggle="modal"
-            data-bs-target="#imageModal"
-
-            onclick="openImageModal(this)"
-        >
-        <div class="box-element product">
-            <h6><strong>INTERN</strong></h6>
-            <hr>
-            <!-- <button class="btn btn-outline-secondary add-btn">Event</button> -->
-            <a class="btn btn-outline-success" href="https://www.instagram.com/chrstina06/">Contact Me</a>
-            <h4 style="display: inline-block; float: right"><strong>Christina Nguyen</strong></h4>
-        </div>
-    </div>
-
-    <div class="col-lg-4">
-        <img 
-            class="thumbnail" 
-            src="{% static 'app/images/eboard/cynthia.png' %}"
-            alt="Cynthia Ngo"
-            style="cursor:pointer; max-width:100%;"
-
-            data-bs-toggle="modal"
-            data-bs-target="#imageModal"
-
-            onclick="openImageModal(this)"
-        >
-        <div class="box-element product">
-            <h6><strong>INTERN</strong></h6>
-            <hr>
-            <!-- <button class="btn btn-outline-secondary add-btn">Event</button> -->
-            <a class="btn btn-outline-success" href="https://www.instagram.com/cyn.0111/">Contact Me</a>
-            <h4 style="display: inline-block; float: right"><strong>Cynthia Ngo</strong></h4>
         </div>
     </div>
 </div>
