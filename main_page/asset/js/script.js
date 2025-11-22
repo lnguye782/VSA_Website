@@ -1,8 +1,8 @@
 const hamburger = document.querySelector('.hamburger-menu');
-const navLinks = document.getElementById('nav-links');
+const headerLinks = document.getElementById('header-links');
 
 hamburger.addEventListener('click', () => {
-    navLinks.classList.toggle('active');
+    headerLinks.classList.toggle('active');
 });
 
 const introVideo1 = document.getElementById('intro-video-1');

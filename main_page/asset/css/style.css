@@ -29,8 +29,8 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
     gap: 1.5rem;
 }
 
@@ -107,18 +107,18 @@ header {
     color: #ffffff;
 }
 
-.nav-links {
+.header-links {
     list-style: none;
     display: flex;
     width: 100%;
 }
 
-.nav-links li {
+.header-links li {
     flex: 1;
     text-align: center;
 }
 
-.nav-links li a {
+.header-links li a {
     display: block;
     padding: 1rem 0;
     text-decoration: none;
@@ -128,13 +128,13 @@ header {
     transition: background-color 0.2s;
 }
 
-.nav-links li a:hover {
+.header-links li a:hover {
     background-color: #1aa885;
 }
 
 main {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding-top: 1.5rem;
+    padding-bottom: 0rem;
 }
 
 .hero-grid {
@@ -201,6 +201,85 @@ main {
     background-color: #1aa885;
 }
 
+footer {
+    background-color: #111827;
+    color: #9ca3af;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+    gap: 2rem;
+}
+
+.logo-title-group {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.footer-logo {
+    margin-bottom: 0;
+}
+
+.footer-col h3 {
+    color: #ffffff;
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.footer-col p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-top: 0.5rem;
+}
+
+.contact-col {
+    text-align: right;
+}
+
+.contact-col .footer-links li {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.footer-links {
+    list-style: none;
+    margin-top: 1rem;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #9ca3af;
+    transition: color 0.2s;
+}
+
+.footer-links a:hover {
+    color: #1fd44d;
+}
+
+.footer-bottom {
+    border-top: 1px solid #374151;
+    padding-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.9rem;
+}
+
+.footer-bottom strong {
+    color: #ffffff;
+}
+
+
 /* This is a "media query" to show the search bar on large screens */
 @media (min-width: 768px) {
     .search-bar {
@@ -215,23 +294,23 @@ main {
         padding: 1rem 0;
     }
 
-    .nav-links {
+    .header-links {
         display: none;
         flex-direction: column;
         width: 100%;
         background-color: #1fd44d;
     }
 
-    .nav-links.active {
+    .header-links.active {
         display: flex;
     }
 
-    .nav-links li {
+    .header-links li {
         text-align: center;
         width: 100%;
     }
 
-    .nav-links li a {
+    .header-links li a {
         padding: 1rem 0;
     }
 
@@ -278,5 +357,32 @@ main {
 
     .hero-item img {
         object-position: top;
+    }
+}
+
+/* This is a "media query" to make footer mobile responsiveness */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .logo-title-group {
+        justify-content: center;
+    }
+
+    .contact-col {
+        text-align: center;
+    }
+
+    .contact-col .footer-links li {
+        justify-content: center;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
     }
 }
