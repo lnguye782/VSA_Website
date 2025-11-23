@@ -9,6 +9,9 @@ body {
     background-color: #f3f4f6;
     color: #333;
     line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 .container {
@@ -133,6 +136,7 @@ header {
 }
 
 main {
+    flex: 1;
     padding-top: 1.5rem;
     padding-bottom: 0rem;
 }
@@ -287,7 +291,7 @@ footer {
     }
 }
 
-/* This is a "media query" to show the hamburger menu on mobile screens */
+/* This is a "media query" for responsive on mobile screens */
 @media (max-width: 768px) {
     .hamburger-menu {
         display: block;
@@ -333,10 +337,7 @@ footer {
         justify-content: center;
         gap: 3rem;
     }
-}
 
-/* This is a "media query" to make the main layout stack on mobile screens */
-@media (max-width: 768px) {
     .hero-grid {
         display: flex;
         flex-direction: column;
@@ -358,10 +359,7 @@ footer {
     .hero-item img {
         object-position: top;
     }
-}
 
-/* This is a "media query" to make footer mobile responsiveness */
-@media (max-width: 768px) {
     .footer-content {
         flex-direction: column;
         text-align: center;
