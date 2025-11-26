@@ -6,25 +6,67 @@ hamburger.addEventListener('click', () => {
 });
 
 const albums = {
-    "gold_rush_interest": {
-        title: "Gold Rush Interest",
+    "2025_interest": {
+        title: "Gold Rush + Interest",
         caterogy: "GBM",
         description: "Kicking off the semester with our new members!",
         count: 139,
         year: "2025_2026"
     },
-    "moon_festival": {
+    
+    "2025_moon_festival": {
         title: "Moon Festival",
         caterogy: "GBM",
         description: "Beneath the full moon, we celebrate connection, gratitude, and light!",
         count: 576,
         year:"2025_2026"
     },
-    "maid_cafe": {
+
+    "2024_interest": {
+        title: "Interest",
+        caterogy: "GBM",
+        description: "A little bit more about our WONDERFUL Eboard and our AMAZING organization!",
+        count: 152,
+        year: "2024_2025"
+    },
+
+    "2024_night_market": {
+        title: "Night Market",
+        caterogy: "GBM",
+        description: "A BIG shoutout to all of the vendors to help make it possible, especially NC Nails Esthetics Academy!",
+        count: 98,
+        year: "2024_2025"
+    },
+
+    "2024_maid_cafe": {
         title: "Maid Cafe",
         caterogy: "GBM",
-        description: "Sweet treats served by our maids, while also watching them do a series of funny Dares!!!",
+        description: "Sweet treats served by our maids, while also watching them do a series of funny Dares!",
         count: 106,
+        year:"2024_2025"
+    },
+
+    "2024_tet": {
+        title: "New Year",
+        caterogy: "GBM",
+        description: "Feelin’ lucky with red envelopes and big smiles with good luck come our way !! Vsa wants to wish you a Happy Lunar New Year with good fortune and good vibes !!!",
+        count: 559,
+        year:"2024_2025"
+    },
+
+    "2024_valentine": {
+        title: "Valentine",
+        caterogy: "GBM",
+        description: "Bring your friends or that special someone to play our fun compatibility games and test your relationship!!",
+        count: 201,
+        year:"2024_2025"
+    },
+
+    "2024_che_and_paint": {
+        title: "Che and Paint",
+        caterogy: "GBM",
+        description: "Enjoying a Vietnamese dessert/snack called chè thái and painting canvases, fans, and lanterns!!! ",
+        count: 307,
         year:"2024_2025"
     },
 };
