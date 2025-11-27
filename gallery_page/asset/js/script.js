@@ -22,6 +22,14 @@ const albums = {
         year:"2025_2026"
     },
 
+    "2024_viet_night": {
+        title: "Lanterns of Legacy",
+        caterogy: "VietNight",
+        description: "Enjoy a spectacular night and magnificent performances, food, raffle prizes, Vietnamese culture, and much more!!!",
+        count: 397,
+        year: "2024_2025"
+    },
+
     "2024_interest": {
         title: "Interest",
         caterogy: "GBM",
@@ -65,9 +73,57 @@ const albums = {
     "2024_che_and_paint": {
         title: "Che and Paint",
         caterogy: "GBM",
-        description: "Enjoying a Vietnamese dessert/snack called chè thái and painting canvases, fans, and lanterns!!! ",
+        description: "Enjoying a Vietnamese dessert/snack called chè thái and painting canvases, fans, and lanterns!!!",
         count: 307,
         year:"2024_2025"
+    },
+
+    "2023_viet_night": {
+        title: "Yêu Lành",
+        caterogy: "VietNight",
+        description: "An amazing night filled with amazing people, food, performances, and more!!!",
+        count: 0,
+        year:"2023_2024"
+    },
+
+    "2023_interest": {
+        title: "Interest",
+        caterogy: "GBM",
+        description: "It’s that time for the eboard members & members to meet each other. Giveaways, snacks, games, and lots more!",
+        count: 465,
+        year:"2023_2024"
+    },
+
+    "2023_casino_night": {
+        title: "Casino Night",
+        caterogy: "GBM",
+        description: "Join VSA for some EXCITING fun at our Casino Night gbm!! Learn a variety of traditional Vietnamese games like tiến lên, bầu cua tôm cá, and much more!",
+        count: 468,
+        year:"2023_2024"
+    },
+
+    "2023_moon_festival": {
+        title: "Moon Festival",
+        caterogy: "GBM",
+        description: "A special performance featuring Lion Dancers, games with special prizes, and Moon Cake tasting!",
+        count: 442,
+        year:"2023_2024"
+    },
+
+    "2023_vsa_by_night": {
+        title: "VSA By Night",
+        caterogy: "GBM",
+        description: "An amazing time listening to all of the talented performers. Shout out to all of the people who stepped up and sang their heart out!",
+        count: 722,
+        year:"2023_2024"
+    },
+
+    "2023_xin_chao_vietnam": {
+        title: "Xin Chào Vietnam",
+        caterogy: "GBM",
+        description: "Come learn about Vietnamese culture with dessert, games, dancing, fashion, and more!",
+        count: 113,
+        year:"2023_2024"
     },
 };
 
