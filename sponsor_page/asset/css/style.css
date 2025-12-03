@@ -139,11 +139,56 @@ main {
     flex: 1;
 }
 
+.sponsor-hero {
+    background-color: #111827;
+    color: #ffffff;
+    text-align: center;
+    padding: 6rem 1rem;
+    background-image: radial-gradient(circle at top right, #1fd44d22 0%, transparent 40%);
+}
 
+.hero-tag {
+    color: #1fd44d;
+    font-weight: 700;
+    letter-spacing: 2px;
+    font-size: 0.9rem;
+    display: block;
+    margin-bottom: 1rem;
+}
 
+.sponsor-hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.1;
+}
 
+.sponsor-hero p {
+    font-size: 1.2rem;
+    color: #9ca3af;
+    max-width: 600px;
+    margin: 0 auto 3rem auto;
+}
 
+.btn-primary {
+    display: inline-block;
+    background-color: #ffffff;
+    color: #111827;
+    padding: 1.2rem 2rem;
+    margin-bottom: 2rem;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: all 0.3s;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
 
+.btn-primary:hover {
+    background-color: #1fd44d;
+    color: #ffffff;
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(31, 212, 77, 0.4);
+}
 
 
 
