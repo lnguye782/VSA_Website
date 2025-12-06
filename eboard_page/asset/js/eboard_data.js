@@ -89,6 +89,74 @@ const boardData = {
                 image: "asset/images/eboard/2025_2026/kevin.jpg",
             },
         ],
+
+        intern: [
+            {
+                name: "Adeline Lei",
+                role: "Intern",
+                image: "asset/images/eboard/2025_2026/adeline.jpg",
+            },
+
+            {
+                name: "Alex Ota",
+                role: "Intern",
+                image: "asset/images/eboard/2025_2026/alex.jpg",
+            },
+
+            {
+                name: "Angie Tran",
+                role: "Intern",
+                image: "asset/images/eboard/2025_2026/angie.jpg",
+            },
+
+            {
+                name: "Anh Vu",
+                role: "Intern",
+                image: "asset/images/eboard/2025_2026/anh.jpg",
+            },
+
+            {
+                name: "Connor Frick",
+                role: "Intern",
+                image: "asset/images/eboard/2025_2026/connor.jpg",
+            },
+
+            {
+                name: "David Le",
+                role: "Intern",
+                image: "asset/images/eboard/2025_2026/david.jpg",
+            },
+
+            {
+                name: "Harrison Truong",
+                role: "Intern",
+                image: "asset/images/eboard/2025_2026/harrison.jpg",
+            },
+
+            {
+                name: "Lauren Bach",
+                role: "Intern",
+                image: "asset/images/eboard/2025_2026/lauren.jpg",
+            },
+
+            {
+                name: "Minh Anh Nguyen",
+                role: "Intern",
+                image: "asset/images/eboard/2025_2026/minh_anh.jpg",
+            },
+
+            {
+                name: "Noah Vo",
+                role: "Intern",
+                image: "asset/images/eboard/2025_2026/noah.jpg",
+            },
+
+            {
+                name: "Vy Duong",
+                role: "Intern",
+                image: "asset/images/eboard/2025_2026/vy.jpg",
+            },
+        ],
     },
     
     "2024-2025": {
@@ -181,10 +249,180 @@ const boardData = {
                 image: "asset/images/eboard/2024_2025/hy.jpg",
             },
         ],
+
+        intern: [
+            {
+                name: "Adrian Dao",
+                role: "Intern",
+                image: "asset/images/eboard/2024_2025/adrian.png",
+            },
+            
+            {
+                name: "Angela Tran",
+                role: "Intern",
+                image: "asset/images/eboard/2024_2025/angela.png",
+            },
+
+            {
+                name: "Bryce Katiman",
+                role: "Intern",
+                image: "asset/images/eboard/2024_2025/bryce.png",
+            },
+            
+            {
+                name: "Christina Nguyen",
+                role: "Intern",
+                image: "asset/images/eboard/2024_2025/christina.png",
+            },
+
+            {
+                name: "Daniel Nguyen",
+                role: "Intern",
+                image: "asset/images/eboard/2024_2025/daniel.png",
+            },
+
+            {
+                name: "Jade Bui",
+                role: "Intern",
+                image: "asset/images/eboard/2024_2025/jade.png",
+            },
+
+            {
+                name: "Kelly Le",
+                role: "Intern",
+                image: "asset/images/eboard/2024_2025/kelly.png",
+            },
+
+            {
+                name: "Cynthia Ngo",
+                role: "Intern",
+                image: "asset/images/eboard/2024_2025/cynthia.png",
+            },
+
+            {
+                name: "Katie Huynh",
+                role: "Intern",
+                image: "asset/images/eboard/2024_2025/katie.png",
+            },
+
+            {
+                name: "Kevin Le",
+                role: "Intern",
+                image: "asset/images/eboard/2024_2025/kevin.png",
+            },
+
+            {
+                name: "Khang Pham",
+                role: "Intern",
+                image: "asset/images/eboard/2024_2025/khang.png",
+            },
+
+            {
+                name: "Lee Luu",
+                role: "Intern",
+                image: "asset/images/eboard/2024_2025/lee.png",
+            },
+
+            {
+                name: "Nathan Do",
+                role: "Intern",
+                image: "asset/images/eboard/2024_2025/nathan.png",
+            },
+
+            {
+                name: "Nhi Nguyen",
+                role: "Intern",
+                image: "asset/images/eboard/2024_2025/nhi.png",
+            },
+        ],
     },
 
     "2023-2024": {
+        core: [
+            {
+                name: "Executive Board",
+                role: "Core",
+                image: "asset/images/eboard/2023_2024/core.jpg"
+            },
+        ],
 
+        event: [
+            {
+                name: "Event Board",
+                role: "Event",
+                image: "asset/images/eboard/2023_2024/event.jpg",
+            },
+        ],
+
+        media: [
+            {
+                name: "Media Board",
+                role: "Media",
+                image: "asset/images/eboard/2023_2024/media.jpg"
+            },
+        ],
+
+        intern: [
+            {
+                name: "Angelica Calumba",
+                role: "Intern",
+                image: "asset/images/eboard/2023_2024/angelica.jpg"
+            },
+
+            {
+                name: "Brianna Pham",
+                role: "Intern",
+                image: "asset/images/eboard/2023_2024/brianna.jpg"
+            },
+
+            {
+                name: "Celina Truong",
+                role: "Intern",
+                image: "asset/images/eboard/2023_2024/celina.jpg"
+            },
+
+            {
+                name: "Daisy Ho",
+                role: "Intern",
+                image: "asset/images/eboard/2023_2024/daisy.jpg"
+            },
+
+            {
+                name: "Dylan Nguyen",
+                role: "Intern",
+                image: "asset/images/eboard/2023_2024/dylanng.jpg"
+            },
+
+            {
+                name: "Dylan Truong",
+                role: "Intern",
+                image: "asset/images/eboard/2023_2024/dylantr.jpg"
+            },
+
+            {
+                name: "Hy Nguyen",
+                role: "Intern",
+                image: "asset/images/eboard/2023_2024/hy.jpg"
+            },
+
+            {
+                name: "Jae Luanglath",
+                role: "Intern",
+                image: "asset/images/eboard/2023_2024/jae.jpg"
+            },
+
+            {
+                name: "Jon Sanchez",
+                role: "Intern",
+                image: "asset/images/eboard/2023_2024/jon.jpg"
+            },
+
+            {
+                name: "Steven Lang",
+                role: "Intern",
+                image: "asset/images/eboard/2023_2024/steven.jpg"
+            },
+        ],
     },
 }
 
@@ -192,6 +430,7 @@ function loadBoard(year) {
     const coreGrid = document.getElementById('core-grid');
     const eventGrid = document.getElementById('event-grid');
     const mediaGrid = document.getElementById('media-grid');
+    const internGrid = document.getElementById('intern-grid');
     const buttons = document.querySelectorAll('.year-btn');
 
     buttons.forEach(btn => {
@@ -208,6 +447,7 @@ function loadBoard(year) {
     if(coreGrid) coreGrid.innerHTML = '';
     if(eventGrid) eventGrid.innerHTML = '';
     if(mediaGrid) mediaGrid.innerHTML = '';
+    if(internGrid) internGrid.innerHTML = '';
 
     const data = boardData[year];
 
@@ -241,6 +481,15 @@ function loadBoard(year) {
         });
     } else {
         if(mediaGrid) mediaGrid.innerHTML = '<p>No media members listed</p>';
+    }
+
+    if (data.intern && data.intern.length > 0) {
+        data.intern.forEach(member => {
+            const card = createCard(member);
+            if(internGrid) internGrid.appendChild(card);
+        });
+    } else {
+        if(internGrid) internGrid.innerHTML = '<p>No intern members listed</p>';
     }
 }
 

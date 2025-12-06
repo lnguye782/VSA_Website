@@ -241,7 +241,7 @@ main {
     margin: 0.5rem auto 0;
 }
 
-.core-grid, .event-grid, .media-grid {
+.core-grid, .event-grid, .media-grid, .intern-grid {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -252,7 +252,7 @@ main {
 
 .member-card-scene {
     background-color: transparent;
-    width: 350px;
+    width: 390px;
     max-width: 100%;
     aspect-ratio: 4/5;
     perspective: 1000px;
