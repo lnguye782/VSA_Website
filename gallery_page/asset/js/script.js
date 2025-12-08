@@ -131,7 +131,6 @@ const galleryContainer = document.getElementById('pinterest-gallery');
 const eventTitle = document.getElementById('event-title');
 
 if (galleryContainer && eventTitle) {
-    
     const urlParams = new URLSearchParams(window.location.search);
     const albumId = urlParams.get('id');
     const album = albums[albumId];
@@ -159,20 +158,43 @@ if (galleryContainer && eventTitle) {
         const randomNumbers = shuffle(imageNumbers);
         const selectedNumbers = randomNumbers.slice(0, imagesToShow);
 
+        const lightbox = document.getElementById("lightbox");
+        const lightboxImg = document.getElementById("lightbox-img");
+        const captionText = document.getElementById("caption");
+        const closeBtn = document.querySelector(".close-lightbox");
+
         selectedNumbers.forEach(num => {
             const div = document.createElement('div');
             div.classList.add('pin-item');
-        
-            div.innerHTML = `
-                <img
-                    src="/gallery_page/asset/images/gallery/${album.year}/${albumId}/${num}.jpg"
-                    alt="${album.title} photo ${num}"
-                    loading="lazy"
-                >
-            `;
 
+            const imgElement = document.createElement('img');
+            imgElement.src = `/gallery_page/asset/images/gallery/${album.year}/${albumId}/${num}.jpg`;
+            imgElement.alt = `${album.title} - Photo ${num}`;
+            imgElement.loading = "lazy";
+
+            imgElement.onclick = function() {
+                lightbox.style.display = "block";
+                lightboxImg.src = this.src;
+                captionText.innerHTML = this.alt;
+            }
+
+            div.appendChild(imgElement);
             galleryContainer.appendChild(div);
         });
+
+        if (closeBtn) {
+            closeBtn.onclick = function() {
+                lightbox.style.display = "none";
+            }
+        }
+
+        if (lightbox) {
+            lightbox.onclick = function(event) {
+                if (event.target === lightbox) {
+                    lightbox.style.display = "none";
+                }
+            }
+        }
     } else {
         document.getElementById('event-title').textContent = "Gallery not found";
     }   
