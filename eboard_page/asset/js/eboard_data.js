@@ -262,12 +262,6 @@ const boardData = {
                 role: "Intern",
                 image: "asset/images/eboard/2024_2025/angela.png",
             },
-
-            {
-                name: "Bryce Katiman",
-                role: "Intern",
-                image: "asset/images/eboard/2024_2025/bryce.png",
-            },
             
             {
                 name: "Christina Nguyen",
@@ -279,18 +273,6 @@ const boardData = {
                 name: "Daniel Nguyen",
                 role: "Intern",
                 image: "asset/images/eboard/2024_2025/daniel.png",
-            },
-
-            {
-                name: "Jade Bui",
-                role: "Intern",
-                image: "asset/images/eboard/2024_2025/jade.png",
-            },
-
-            {
-                name: "Kelly Le",
-                role: "Intern",
-                image: "asset/images/eboard/2024_2025/kelly.png",
             },
 
             {
