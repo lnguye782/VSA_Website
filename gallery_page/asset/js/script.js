@@ -22,6 +22,14 @@ const albums = {
         year:"2025_2026"
     },
 
+    "2025_royal_cafe": {
+        title: "Royal Cafe",
+        caterogy: "GBM",
+        description: "Royal Cafe came alive with dares, elegance and a court full of supporters who made the night unforgettable!",
+        count: 304,
+        year:"2025_2026"
+    },
+
     "2024_viet_night": {
         title: "Lanterns of Legacy",
         caterogy: "VietNight",
