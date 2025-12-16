@@ -286,7 +286,35 @@ main {
     margin: 0 auto 3rem auto;
 }
 
+.hero-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
 .btn-primary {
+    display: inline-block;
+    background-color: transparent;
+    border: 2px solid #1fd44d;
+    color: #ffffff;
+    padding: 1.2rem 2rem;
+    margin-bottom: 2rem;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: all 0.3s;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.btn-primary:hover {
+    background-color: #1fd44d;
+    color: #111827;
+    transform: scale (1.05);
+    box-shadow: 0 10px 20px rgba(31, 212, 77, 0.4);
+}
+
+.btn-secondary {
     display: inline-block;
     background-color: #ffffff;
     color: #111827;
@@ -300,7 +328,7 @@ main {
     box-shadow: 0 4px 15px rgba(0,0,0,0.2);
 }
 
-.btn-primary:hover {
+.btn-secondary:hover {
     background-color: #1fd44d;
     color: #ffffff;
     transform: scale(1.05);
@@ -371,6 +399,170 @@ main {
     $filter: grayscale(0%);
     opacity: 1;
 }*/
+
+.impact-section {
+    padding: 5rem 0;
+    background-color: #f3f4f6;
+}
+
+.impact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.section-heading-left {
+    font-size: 2.5rem;
+    color: #111827;
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+
+.section-heading-left::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background: #1fd44d;
+    margin-top: 0.5rem;
+}
+
+.impact-text p {
+    font-size: 1.1rem;
+    color: #4b5563;
+    margin-bottom: 1.5rem;
+    line-height: 1.7;
+}
+
+.impact-stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+}
+
+.stat-card {
+    background: #f9fafb;
+    padding: 2rem;
+    border-radius: 1rem;
+    text-align: center;
+    border: 1px solid #e5e7eb;
+    transition: transform 0.3s;
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+    border-color: #1fd44d;
+}
+
+.stat-card i {
+    font-size: 2rem;
+    color: #1fd44d;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+.stat-card h3 {
+    font-size: 2rem;
+    color: #111827;
+    margin-bottom: 0.2rem;
+}
+
+.stat-card p {
+    font-size: 0.9rem;
+    color: #6b7280;
+}
+
+.tiers-section {
+    padding: 5rem 0;
+    background-color: #ffffff;
+}
+
+.tiers-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    align-items: start;
+}
+
+.tier-card {
+    background: #ffffff;
+    border-radius: 1.5rem;
+    padding: 2rem;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    position: relative;
+    border: 1px solid #ffffff;
+    transition: transform 0.3s;
+}
+
+.tier-card:hover {
+    transform: translateY(-10px);
+}
+
+.bronze { border-top: 6px solid #CD7F32; }
+.bronze h3 { color: #CD7F32; }
+
+.silver { border-top: 6px solid #C0C0C0; }
+.silver h3 { color: #9ca3af; }
+
+.gold {
+    border-top: 6px solid #FFD700;
+    transform: scale(1.05);
+    box-shadow: 0 20px 40px rgba(255, 215, 0, 0.15);
+    z-index: 2;
+}
+.gold h3 { color: #DAA520; }
+
+.tier-header {
+    text-align: center;
+    border-bottom: 1px solid #f3f4f6;
+    padding-bottom: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.tier-header h3 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.tier-header .price {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #374151;
+}
+
+.tier-benefits {
+    list-style: none;
+}
+
+.tier-benefits li {
+    margin-bottom: 1rem;
+    color: #4b5563;
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+}
+
+.tier-benefits i {
+    color: #1fd44d;
+    font-weight: bold;
+    margin-top: 3px;
+}
+
+.popular-tag {
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #FFD700;
+    color: #111827;
+    padding: 0.3rem 1rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
 
 .sponsor-cta {
     padding: 5rem 0;
