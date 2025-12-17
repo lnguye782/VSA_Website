@@ -297,7 +297,7 @@ main {
     background-color: transparent;
     border: 2px solid #1fd44d;
     color: #ffffff;
-    padding: 1.2rem 2rem;
+    padding: 1rem 2rem;
     margin-bottom: 2rem;
     text-decoration: none;
     border-radius: 50px;
@@ -482,7 +482,7 @@ main {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
-    align-items: start;
+    align-items: center;
 }
 
 .tier-card {
@@ -507,7 +507,6 @@ main {
 
 .gold {
     border-top: 6px solid #FFD700;
-    transform: scale(1.05);
     box-shadow: 0 20px 40px rgba(255, 215, 0, 0.15);
     z-index: 2;
 }
@@ -564,6 +563,11 @@ main {
     letter-spacing: 1px;
 }
 
+.sub-price {
+    font-size: 0.9rem;
+    color: #9ca3af;
+}
+
 .sponsor-cta {
     padding: 5rem 0;
     background-color: #f3f4f6;
@@ -579,6 +583,56 @@ main {
 .sponsor-cta p {
     margin-bottom: 2rem;
     color: #4b5563;
+}
+
+.contact-box {
+    background: #ffffff;
+    max-width: 600px;
+    margin: 3rem auto 0;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+}
+
+.contact-info h3 {
+    font-size: 1.8rem;
+    color: #111827;
+    margin-bottom: 0.2rem;
+}
+
+.contact-link {
+    display: block;
+    color: #4b5563;
+    text-decoration: none;
+    margin: 0.5rem 0;
+    font-size: 1.1rem;
+    transition: color 0.2s;
+}
+
+.contact-link:hover {
+    color: #1fd44d;
+}
+
+.payment-methods {
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #f3f4f6;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.pay-method {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 600;
+    color: #111827;
+}
+
+.pay-method i {
+    font-size: 1.5rem;
+    color: #1fd44d;
 }
 
 footer {
@@ -747,6 +801,14 @@ footer {
         color: #ffffff;
     }
 
+    .hero-buttons {
+        flex-direction: column;
+    }
+
+    .btn-primary, .btn-secondary {
+        text-align: center;
+    }
+
     .sponsor-hero h1 {
         font-size: 2.5rem;
     }
@@ -759,6 +821,29 @@ footer {
     .sponsor-card {
         padding: 1rem;
         height: 120px;
+    }
+
+    .impact-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .tiers-grid {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+    .sponsor-cta h2 {
+        font-size: 1.7rem;
+    }
+
+    .pay-method {
+        font-weight: 1rem;
+        color: #111827;
+    }
+
+    .pay-method i {
+        display: none;
     }
     
     .footer-content {
