@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -478,6 +482,21 @@ main {
     background-color: #ffffff;
 }
 
+.tier-note {
+    text-align: center;
+    color: #6b7280;
+    margin-bottom: 3rem;
+    margin-top: -2rem;
+    font-size: 1.1rem;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tier-note strong {
+    color: #1fd44d;
+}
+
 .tiers-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -556,16 +575,14 @@ main {
     transform: translateX(-50%);
     background: #FFD700;
     color: #111827;
-    padding: 0.3rem 1rem;
+    padding: 0.4rem 1.2rem;
     border-radius: 20px;
     font-size: 0.8rem;
     font-weight: 800;
     letter-spacing: 1px;
-}
-
-.sub-price {
-    font-size: 0.9rem;
-    color: #9ca3af;
+    white-space: nowrap;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
 .sponsor-cta {
@@ -581,6 +598,7 @@ main {
 }
 
 .sponsor-cta p {
+    font-size: 1.2rem;
     margin-bottom: 2rem;
     color: #4b5563;
 }
@@ -618,21 +636,36 @@ main {
     padding-top: 1.5rem;
     border-top: 1px solid #f3f4f6;
     display: flex;
-    justify-content: center;
-    gap: 2rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
 }
 
 .pay-method {
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    font-weight: 600;
+    font-size: 1.1rem;
     color: #111827;
+    transition: transform 0.2s;
 }
 
-.pay-method i {
-    font-size: 1.5rem;
-    color: #1fd44d;
+.pay-method:hover {
+    transform: scale(1.05);
+}
+
+.pay-label {
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.venmo-text {
+    color: #008CFF;
+}
+
+.cashapp-text {
+    color: #00D632;
 }
 
 footer {
