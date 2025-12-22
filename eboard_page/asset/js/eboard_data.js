@@ -5,42 +5,36 @@ const boardData = {
                 name: "Nhi Nguyen",
                 role: "Co-President",
                 image: "asset/images/eboard/2025_2026/nhi.jpg",
-                intro: "Nhi is cute"
             },
 
             {
                 name: "Lee Luu",
                 role: "Co-President",
                 image: "asset/images/eboard/2025_2026/lee.jpg",
-                intro: "Lee is groovy"
             },
 
             {
                 name: "Katie Huynh",
                 role: "Internal Vice President",
                 image: "asset/images/eboard/2025_2026/katie.jpg",
-                intro: "Katie is goofy"
             },
 
             {
                 name: "Cynthia Ngo",
                 role: "External Vice President",
                 image: "asset/images/eboard/2025_2026/cynthia.jpg",
-                intro: "Cynthia is cheerful"
             },
 
             {
                 name: "Khang Pham",
                 role: "Secretary",
                 image: "asset/images/eboard/2025_2026/khang.jpg",
-                intro: "Khang is brave"
             },
 
             {
                 name: "Angela Tran",
                 role: "Tresurer",
                 image: "asset/images/eboard/2025_2026/angela.jpg",
-                intro: "Angela is ABG"
             },
         ],
 
@@ -495,14 +489,13 @@ function createCard(member) {
     const cardBack = document.createElement('div');
     cardBack.classList.add('member-card-face', 'member-card-back');
 
-    const introText = member.intro ? member.intro : "No bio available";
+    /*const introText = member.intro ? member.intro : "No bio available";*/
 
     cardBack.innerHTML = `
         <div class="back-content">
             <h3>${member.name}</h3>
             <h4>${member.role}</h4>
             <div class="divider"></div>
-            <p>${introText}</p>
         </div>
     `;
 
