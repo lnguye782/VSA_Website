@@ -377,10 +377,6 @@ main {
     border: 1px solid #e5e7eb;
     border-radius: 1rem;
     padding: 0.5rem;
-    height: 150px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
@@ -395,8 +391,15 @@ main {
     max-height: 100%;
     object-fit: contain;
     /*filter: grayscale(100%);
-    opacity: 0.7;*/
-    transition: filter 0.3s;
+    opacity: 0.7;
+    transition: filter 0.3s;*/
+}
+
+.sponsor-link {
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /*.sponsor-card:hover img {
@@ -871,12 +874,7 @@ footer {
     }
 
     .pay-method {
-        font-weight: 1rem;
-        color: #111827;
-    }
-
-    .pay-method i {
-        display: none;
+        font-size: 1rem;
     }
     
     .footer-content {
