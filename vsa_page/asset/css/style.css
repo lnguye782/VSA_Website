@@ -294,26 +294,31 @@ main {
 }
 
 .hero-text h1 {
-    font-size: 4.5rem;
+    font-size: 4rem;
     line-height: 1;
     color: #111827;
     margin-bottom: 2rem;
     font-weight: 800;
     letter-spacing: -2px;
+    padding-bottom: 1rem;
 }
 
 .hero-text span {
     color: #1fd44d;
-    display: block;
 }
 
 .hero-text p {
     font-size: 1.2rem;
     color: #4b5563;
-    max-width: 500px;
+    max-width: 600px;
     line-height: 1.7;
     border-left: 4px solid #1fd44d;
     padding-left: 1.5rem;
+}
+
+.hero-text strong {
+    font-size: 1.3rem;
+    color: #1fd44d;
 }
 
 .hero-image {
@@ -394,59 +399,6 @@ main {
 .pillar-card h3 {
     margin-bottom: 0.75rem;
     font-size: 1.25rem;
-}
-
-.tradition-section {
-    padding: 4rem 0;
-    background-color: #111827;
-    color: #ffffff;
-}
-
-.tradition-layout {
-    display: flex;
-    align-items: center;
-    gap: 4rem;
-    justify-content: space-between;
-}
-
-.tradition-image img {
-    width: 100%;
-    max-width: 400px;
-    border-radius: 1rem;
-    box-shadow: -10px 10px 0px #1fd44d;
-}
-
-.tradition-text h2 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-    color: #1fd44d;
-}
-
-.stole-rules {
-    margin-top: 2rem;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-}
-
-.rule-item {
-    background: rgba(255, 255, 255, 0.1);
-    padding: 1rem;
-    border-radius: 0.5rem;
-    display: flex;
-    justify-content: space-between;
-}
-
-.rule-item .highlight {
-    font-weight: bold;
-    color: #1fd44d;
-}
-
-.small-note {
-    font-size: 0.8rem;
-    margin-top: 1rem;
-    color: #9ca3af;
-    font-style: italic;
 }
 
 .membership-section {
@@ -629,37 +581,20 @@ footer {
         gap: 2rem;
     }
 
-    .hero-text p { 
-        border-left: none; 
-        margin: 0 auto; 
-    }
-
     .hero-text h1 { 
         font-size: 3rem; 
+    }
+
+    .hero-text p { 
+        font-size: 1.09rem;
+        border-left: none;
+        margin: 0 auto; 
+        padding-left: 0rem;
     }
 
     .rotating-lotus { 
         width: 250px; 
         height: 250px; 
-    }
-
-    .tradition-layout {
-        flex-direction: column;
-        text-align: center;
-        gap: 3rem;
-    }
-
-    .tradition-image img {
-        max-width: 100%;
-        width: 350px;
-        margin: 0 auto;
-    }
-
-    .stole-rules {
-        text-align: left;
-        max-width: 500px;
-        margin-left: auto;
-        margin-right: auto;
     }
 
     .pillars-grid {
@@ -748,6 +683,14 @@ footer {
     .dropdown-menu li a:hover {
         background-color: rgba(0,0,0,0.1);
         color: #ffffff;
+    }
+
+    .hero-text h1 {
+        font-size: 2.7rem;
+    }
+
+    .hero-text p {
+        font-size: 1.14rem;
     }
 
     .pillars-grid {
