@@ -606,6 +606,10 @@ main {
     color: #4b5563;
 }
 
+.sponsor-cta strong {
+    color: #1fd44d;
+}
+
 .contact-box {
     background: #ffffff;
     max-width: 600px;
@@ -619,6 +623,10 @@ main {
     font-size: 1.8rem;
     color: #111827;
     margin-bottom: 0.2rem;
+}
+
+.contact-info p {
+    color: #1fd44d;
 }
 
 .contact-link {
