@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+:root{
+    --primary-color:  #52a66e;
+    --secondary-color: #ffffff;    
+}
+
 body {
     font-family: 'Inter', sans-serif;
     background-color: #f3f4f6;
@@ -24,7 +29,7 @@ body {
 }
 
 header {
-    background-color: #ffffff;
+    background-color: var(--secondary-color);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
@@ -141,12 +146,12 @@ header {
 }
 
 .icon-link:hover {
-    color: #1fd44d;
+    color: var(--primary-color);
 }
 
 .header-nav {
-    background-color: #1fd44d;
-    color: #ffffff;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
 }
 
 .header-nav .container {
@@ -160,7 +165,7 @@ header {
     display: none;
     font-size: 1.5rem;
     cursor: pointer;
-    color: #ffffff;
+    color: var(--secondary-color);
 }
 
 .header-links {
@@ -185,7 +190,7 @@ header {
 }
 
 .header-links li a:hover {
-    background-color: #1aa885;
+    background-color: var(--primary-color);
 }
 
 .dropdown-parent {
@@ -197,7 +202,7 @@ header {
     position: absolute;
     top: 100%;
     left: 0;
-    background-color: #ffffff;
+    background-color: var(--secondary-color);
     min-width: 320px;
     padding: 0.5rem;
     box-shadow: 0 10px 40px rgba(0,0,0,0.15);
@@ -217,7 +222,7 @@ header {
     left: 20px;
     width: 12px;
     height: 12px;
-    background-color: #ffffff;
+    background-color: var(--secondary-color);
     transform: rotate(45deg);
     border-top: 1px solid rgba(0,0,0,0.05);
     border-left: 1px solid rgba(0,0,0,0.05);
@@ -249,7 +254,7 @@ header {
 
 .dropdown-menu li a:hover {
     background-color: #f0fdf4;
-    color: #1fd44d;
+    color: var(--primary-color);
 }
 
 main {
@@ -271,12 +276,12 @@ main {
 }
 
 .breadcrumbs a:hover {
-    color: #1fd44d;
+    color: var(--primary-color);
     text-decoration: underline;
 }
 
 .breadcrumbs span {
-    color: #1fd44d;
+    color: var(--primary-color);
 }
 
 .about-hero {
@@ -304,7 +309,7 @@ main {
 }
 
 .hero-text span {
-    color: #1fd44d;
+    color: var(--primary-color);
 }
 
 .hero-text p {
@@ -312,17 +317,24 @@ main {
     color: #4b5563;
     max-width: 600px;
     line-height: 1.7;
-    border-left: 4px solid #1fd44d;
+    border-left: 4px solid var(--primary-color);
     padding-left: 1.5rem;
 }
 
 .hero-text strong {
     font-size: 1.3rem;
-    color: #1fd44d;
+    color: var(--primary-color);
 }
 
 .hero-image {
     position: relative;
+    max-width: 300px;
+}
+
+.hero-image img{
+    width:100%;
+    height: auto;
+    display: block;
 }
 
 .hero-image::before {
@@ -333,7 +345,7 @@ main {
     transform: translate(-50%, -50%);
     width: 400px;
     height: 400px;
-    background: #1fd44d;
+    background: var(--primary-color);
     border-radius: 50%;
     filter: blur(80px);
     opacity: 0.2;
@@ -354,7 +366,7 @@ main {
 
 .mission-section {
     padding: 2rem 0;
-    background-color: #ffffff;
+    background-color: var(--secondary-color);
 }
 
 .section-title {
@@ -386,12 +398,12 @@ main {
 .pillar-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
-    border-color: #1fd44d;
+    border-color: var(--primary-color);
 }
 
 .pillar-card i {
     font-size: 2.5rem;
-    color: #1fd44d;
+    color: var(--primary-color);
     margin-bottom: 1rem;
     display: block;
 }
@@ -434,7 +446,7 @@ main {
 }
 
 .step {
-    background: #ffffff;
+    background: var(--secondary-color);
     padding: 2.5rem 2rem;
     border-radius: 1.5rem;
     box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05);
@@ -447,7 +459,7 @@ main {
 .step:hover {
     transform: translateY(-10px);
     box-shadow: 0 20px 25px -5px rgba(31, 212, 77, 0.15);
-    border-color: #1fd44d;
+    border-color: var(--primary-color);
 }
 
 .step h4 {
@@ -479,7 +491,7 @@ main {
 }
 
 .btn-primary:hover {
-    background-color: #1fd44d;
+    background-color: var(--primary-color);
     transform: scale(1.05);
     box-shadow: 0 10px 20px rgba(31, 212, 77, 0.4);
 }
@@ -511,7 +523,7 @@ footer {
 }
 
 .footer-col h3 {
-    color: #ffffff;
+    color: var(--secondary-color);
     font-size: 1.5rem;
     margin: 0;
 }
@@ -545,7 +557,7 @@ footer {
 }
 
 .footer-links a:hover {
-    color: #1fd44d;
+    color: var(--primary-color);
 }
 
 .footer-bottom {
@@ -558,7 +570,7 @@ footer {
 }
 
 .footer-bottom strong {
-    color: #ffffff;
+    color: var(--secondary-color);
 }
 
 
@@ -616,7 +628,7 @@ footer {
         display: none;
         flex-direction: column;
         width: 100%;
-        background-color: #1fd44d;
+        background-color: var(--primary-color);
     }
 
     .header-links.active {
@@ -676,13 +688,13 @@ footer {
     }
 
     .dropdown-menu li a {
-        color: #ffffff;
+        color: var(--secondary-color);
         padding: 0.8rem;
     }
     
     .dropdown-menu li a:hover {
         background-color: rgba(0,0,0,0.1);
-        color: #ffffff;
+        color: var(--secondary-color);
     }
 
     .hero-text h1 {
