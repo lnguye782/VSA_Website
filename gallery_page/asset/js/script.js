@@ -1,9 +1,11 @@
+document.addEventListener("DOMContentLoaded", () => {
+    
 const hamburger = document.querySelector('.hamburger-menu');
 const headerLinks = document.getElementById('header-links');
 
-hamburger.addEventListener('click', () => {
+if (hamburger && headerLinks) {
     headerLinks.classList.toggle('active');
-});
+}
 
 const albums = {
     "2025_interest": {
@@ -277,3 +279,5 @@ if (searchInput && searchResults) {
         }
     });
 }
+
+});

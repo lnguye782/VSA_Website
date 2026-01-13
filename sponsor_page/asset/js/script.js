@@ -1,76 +1,82 @@
-const hamburger = document.querySelector('.hamburger-menu');
-const headerLinks = document.getElementById('header-links');
+document.addEventListener("DOMContentLoaded", () => {
 
-hamburger.addEventListener('click', () => {
-    headerLinks.classList.toggle('active');
-});
+    const hamburger = document.querySelector('.hamburger-menu');
+    const headerLinks = document.getElementById('header-links');
 
-const searchIndex = [
-    {
-        title: "About Us", 
-        url: "/vsa_page/index.html", 
-        keywords: "home vsa welcome main about mission history culture" 
-    },
+    if (hamburger && headerLinks) {
+        hamburger.addEventListener('click', () => {
+            headerLinks.classList.toggle('active');
+        });
+    }
 
-    { 
-        title: "Gallery", 
-        url: "/gallery_page/index.html", 
-        keywords: "photos pictures images gallery memories albums" 
-    },
+    const searchIndex = [
+        {
+            title: "About Us",
+            url: "/vsa_page/index.html",
+            keywords: "home vsa welcome main about mission history culture"
+        },
+        {
+            title: "Gallery",
+            url: "/gallery_page/index.html",
+            keywords: "photos pictures images gallery memories albums"
+        },
+        {
+            title: "E-Board",
+            url: "/eboard_page/index.html",
+            keywords: "leaders team president eboard executive media event intern"
+        },
+        {
+            title: "Sponsors",
+            url: "/sponsor_page/index.html",
+            keywords: "sponsors partners business donations support community"
+        }
+    ];
 
-    { 
-        title: "E-Board", 
-        url: "/eboard_page/index.html", 
-        keywords: "leaders team president eboard executive media event intern" 
-    },
+    const searchInput = document.getElementById('search-input');
+    const searchResults = document.getElementById('search-results');
 
-    { 
-        title: "Sponsors", 
-        url: "/sponsor_page/index.html", 
-        keywords: "sponsors partners business donations support community" 
-    },
-];
+    if (!searchInput || !searchResults) return;
 
-const searchInput = document.getElementById('search-input');
-const searchResults = document.getElementById('search-results');
-
-if (searchInput && searchResults) {
     searchInput.addEventListener('input', (e) => {
         const query = e.target.value.toLowerCase().trim();
-        
         searchResults.innerHTML = '';
 
-        if (query.length === 0) {
+        if (!query) {
             searchResults.classList.remove('show');
             return;
         }
 
-        const results = searchIndex.filter(item => 
-            item.title.toLowerCase().includes(query) || 
+        const results = searchIndex.filter(item =>
+            item.title.toLowerCase().includes(query) ||
             item.keywords.includes(query)
         );
 
-        if (results.length > 0) {
+        if (results.length) {
             results.forEach(result => {
                 const link = document.createElement('a');
                 link.href = result.url;
-                link.classList.add('search-item');
+                link.className = 'search-item';
                 link.innerHTML = `
                     ${result.title}
-                    <small>${result.url}</small> 
+                    <small>${result.url}</small>
                 `;
                 searchResults.appendChild(link);
             });
         } else {
-            searchResults.innerHTML = `<div class="no-results">No results found for "${query}"</div>`;
+            searchResults.innerHTML =
+                `<div class="no-results">No results found for "${query}"</div>`;
         }
 
         searchResults.classList.add('show');
     });
 
     document.addEventListener('click', (e) => {
-        if (!searchInput.contains(e.target) && !searchResults.contains(e.target)) {
+        if (
+            !searchInput.contains(e.target) &&
+            !searchResults.contains(e.target)
+        ) {
             searchResults.classList.remove('show');
         }
     });
-}
+
+});
