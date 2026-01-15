@@ -8,6 +8,11 @@ html {
     box-sizing: border-box;
 }
 
+:root{
+    --primary-color:  #52a66e;
+    --secondary-color: #ffffff;    
+}
+
 body {
     font-family: 'Inter', sans-serif;
     background-color: #f3f4f6;
@@ -110,7 +115,7 @@ header {
 
 .search-item:hover {
     background-color: #f9fafb;
-    color: #1fd44d;
+    color: var(--primary-color);
 }
 
 .search-item small {
@@ -145,11 +150,11 @@ header {
 }
 
 .icon-link:hover {
-    color: #1fd44d;
+    color: var(--primary-color);
 }
 
 .header-nav {
-    background-color: #1fd44d;
+    background-color: var(--primary-color);
     color: #ffffff;
 }
 
@@ -253,7 +258,7 @@ header {
 
 .dropdown-menu li a:hover {
     background-color: #f0fdf4;
-    color: #1fd44d;
+    color: var(--primary-color);
 }
 
 main {
@@ -265,11 +270,11 @@ main {
     color: #ffffff;
     text-align: center;
     padding: 6rem 1rem;
-    background-image: radial-gradient(circle at top right, #1fd44d22 0%, transparent 40%);
+    background-image: radial-gradient(circle at top right, var(--primary-color)22 0%, transparent 40%);
 }
 
 .hero-tag {
-    color: #1fd44d;
+    color: var(--primary-color);
     font-weight: 700;
     letter-spacing: 2px;
     font-size: 0.9rem;
@@ -299,7 +304,7 @@ main {
 .btn-primary {
     display: inline-block;
     background-color: transparent;
-    border: 2px solid #1fd44d;
+    border: 2px solid var(--primary-color);
     color: #ffffff;
     padding: 1rem 2rem;
     margin-bottom: 2rem;
@@ -312,7 +317,7 @@ main {
 }
 
 .btn-primary:hover {
-    background-color: #1fd44d;
+    background-color: var(--primary-color);
     color: #111827;
     transform: scale (1.05);
     box-shadow: 0 10px 20px rgba(31, 212, 77, 0.4);
@@ -333,7 +338,7 @@ main {
 }
 
 .btn-secondary:hover {
-    background-color: #1fd44d;
+    background-color: var(--primary-color);
     color: #ffffff;
     transform: scale(1.05);
     box-shadow: 0 10px 20px rgba(31, 212, 77, 0.4);
@@ -360,7 +365,7 @@ main {
     display: block;
     width: 50px;
     height: 4px;
-    background: #1fd44d;
+    background: var(--primary-color);
     margin: 0.5rem auto 0;
     border-radius: 2px;
 }
@@ -383,7 +388,7 @@ main {
 .sponsor-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 20px rgba(0,0,0,0.08);
-    border-color: #1fd44d;
+    border-color: var(--primary-color);
 }
 
 .sponsor-card img {
@@ -431,7 +436,7 @@ main {
     display: block;
     width: 60px;
     height: 4px;
-    background: #1fd44d;
+    background: var(--primary-color);
     margin-top: 0.5rem;
 }
 
@@ -459,12 +464,12 @@ main {
 
 .stat-card:hover {
     transform: translateY(-5px);
-    border-color: #1fd44d;
+    border-color: var(--primary-color);
 }
 
 .stat-card i {
     font-size: 2rem;
-    color: #1fd44d;
+    color: var(--primary-color);
     margin-bottom: 0.5rem;
     display: block;
 }
@@ -497,7 +502,7 @@ main {
 }
 
 .tier-note strong {
-    color: #1fd44d;
+    color: var(--primary-color);
 }
 
 .tiers-grid {
@@ -566,7 +571,7 @@ main {
 }
 
 .tier-benefits i {
-    color: #1fd44d;
+    color: var(--primary-color);
     font-weight: bold;
     margin-top: 3px;
 }
@@ -607,7 +612,7 @@ main {
 }
 
 .sponsor-cta strong {
-    color: #1fd44d;
+    color: var(--primary-color);
 }
 
 .contact-box {
@@ -626,7 +631,7 @@ main {
 }
 
 .contact-info p {
-    color: #1fd44d;
+    color: var(--primary-color);
 }
 
 .contact-link {
@@ -639,7 +644,7 @@ main {
 }
 
 .contact-link:hover {
-    color: #1fd44d;
+    color: var(--primary-color);
 }
 
 .payment-methods {
@@ -741,7 +746,7 @@ footer {
 }
 
 .footer-links a:hover {
-    color: #1fd44d;
+    color: var(--primary-color);
 }
 
 .footer-bottom {
@@ -776,7 +781,7 @@ footer {
         display: none;
         flex-direction: column;
         width: 100%;
-        background-color: #1fd44d;
+        background-color: var(--primary-color);
     }
 
     .header-links.active {

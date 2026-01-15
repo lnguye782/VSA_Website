@@ -1,8 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
 
-    /* =============================
-       Hamburger Menu
-    ============================= */
     const hamburger = document.querySelector('.hamburger-menu');
     const headerLinks = document.getElementById('header-links');
 
@@ -12,9 +9,6 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    /* =============================
-       Search Index
-    ============================= */
     const searchIndex = [
         {
             title: "About Us",
@@ -38,9 +32,6 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     ];
 
-    /* =============================
-       Search Logic
-    ============================= */
     const searchInput = document.getElementById('search-input');
     const searchResults = document.getElementById('search-results');
 
