@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", () => {
-
     const hamburger = document.querySelector('.hamburger-menu');
     const headerLinks = document.getElementById('header-links');
 
@@ -78,5 +77,4 @@ document.addEventListener("DOMContentLoaded", () => {
             searchResults.classList.remove('show');
         }
     });
-
 });
