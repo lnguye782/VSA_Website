@@ -1,36 +1,24 @@
-document.addEventListener("DOMContentLoaded", () => {
+async function loadPartial(id, url) {
+    const el = document.getElementById(id);
+    if (!el) return;
+    
+    const res = await fetch(url);
+    if (!res.ok) {
+        console.error(`Failed to load ${url}:`, res.status);
+        return;
+    }
+    el.innerHTML = await res.text();
+}
+
+function initHeaderUI() {
     const hamburger = document.querySelector('.hamburger-menu');
     const headerLinks = document.getElementById('header-links');
 
-    hamburger.addEventListener('click', () => {
-        headerLinks.classList.toggle('active');
-    });
-
-    const searchIndex = [
-        {
-            title: "About Us", 
-            url: "/vsa_page/index.html", 
-            keywords: "home vsa welcome main about mission history culture" 
-        },
-
-        { 
-            title: "Gallery", 
-            url: "/gallery_page/index.html", 
-            keywords: "photos pictures images gallery memories albums" 
-        },
-
-        { 
-            title: "E-Board", 
-            url: "/eboard_page/index.html", 
-            keywords: "leaders team president eboard executive media event intern" 
-        },
-
-        { 
-            title: "Sponsors", 
-            url: "/sponsor_page/index.html", 
-            keywords: "sponsors partners business donations support community" 
-        },
-    ];
+    if (hamburger && headerLinks) {
+        hamburger.addEventListener('click', () => {
+            headerLinks.classList.toggle('active');
+        });
+    }
 
     const searchInput = document.getElementById('search-input');
     const searchResults = document.getElementById('search-results');
@@ -47,8 +35,7 @@ document.addEventListener("DOMContentLoaded", () => {
             }
 
             const results = searchIndex.filter(item => 
-                item.title.toLowerCase().includes(query) || 
-                item.keywords.includes(query)
+                item.title.toLowerCase().includes(query) || (item.keywords && item.keywords.toLowerCase().includes(query))
             );
 
             if (results.length > 0) {
@@ -75,4 +62,37 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         });
     }
+}
+
+const searchIndex = [
+    {
+        title: "About Us", 
+        url: "/vsa_page/index.html", 
+        keywords: "home vsa welcome main about mission history culture" 
+    },
+
+    { 
+        title: "Gallery", 
+        url: "/gallery_page/index.html", 
+        keywords: "photos pictures images gallery memories albums" 
+    },
+
+    { 
+        title: "E-Board", 
+        url: "/eboard_page/index.html", 
+        keywords: "leaders team president eboard executive media event intern" 
+    },
+
+    { 
+        title: "Sponsors", 
+        url: "/sponsor_page/index.html", 
+        keywords: "sponsors partners business donations support community" 
+    },
+];
+
+document.addEventListener("DOMContentLoaded", async () => {
+    await loadPartial("header", "/global_asset/partials/header.html");
+    await loadPartial("footer", "/global_asset/partials/footer.html");
+
+    initHeaderUI();
 });
