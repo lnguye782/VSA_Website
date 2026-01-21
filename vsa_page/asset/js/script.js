@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 document.addEventListener("DOMContentLoaded", () => {
   const lightbox = document.getElementById("lightbox");
   const lightboxImg = document.getElementById("lightboxImg");
@@ -44,5 +43,3 @@ document.addEventListener("DOMContentLoaded", () => {
     lightboxImg.src = "";
   }
 });
-=======
->>>>>>> 00059cd58a844826dea85d10c1332f519d96aff0
