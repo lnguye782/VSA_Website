@@ -3,12 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="asset/css/style.css">
+    <link rel="stylesheet" href="/member_page/asset/css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css" rel="stylesheet"/>
     <title>MEMBER | UNCC VSA</title>
 </head>
 <body>
-
     <div id="header"></div>
 
     <main>
@@ -19,29 +18,26 @@
             </div>
         </div>
 
-<section class="about-hero">
+        <section class="about-hero">
+            <div class="hero-video">
+                <video
+                    src="/member_page/asset/images/merch_video.mp4"
+                    autoplay
+                    muted
+                    playsinline
+                    loop
+                >
+                </video>
+            </div>
 
-    <div class="hero-video">
-        <video
-            src="/member_page/asset/images/merch_video.mp4"
-            autoplay
-            muted
-            playsinline
-            loop
-        ></video>
-    </div>
+            <div class="container hero-content">
+                <div class="hero-text">
+                    <h1>Welcome To Membership Page!</h1>
+                </div>
+            </div>
+        </section>
 
-        <div class="container hero-content">
-        <div class="hero-text">
-            <h1>
-                Welcome To Our Membership Page!
-            </h1>
-        </div>
-    </div>
-
-</section>
-
-    <section class="membership-section">
+        <section class="membership-section">
             <div class="container">
                 <div class="membership-card">
                     <h2>Be a Member at UNCC VSA!</h2>
@@ -63,41 +59,75 @@
                     </div>
 
                     <a href="https://forms.gle/9Fq2haf3nznpaHgC7" class="btn-primary">Become a Member</a>
+                    <h2> Why Choose to Be in Our Organization?</h2>
+                    <p>VSA is a community that celebrates
+                        Vietnamese culture while embracing diversity and inclusion.
+                        Through cultural events, social experiences, and community involvement, VSA creates meaningful connections and shared experiences. 
+                        It is a space to learn, grow, and come together—welcoming anyone interested in culture, community, and making an impact.
+                    </p>
                 </div>
             </div>
-    </section>
+           
+        </section>
 
-<section class="merch-hero">
-    <h1>Our Featured Merch Line!</h1>
-</section>    
+        <section class="merch-hero">
+            <h1>Our Featured Merch Line!</h1>
+        </section>    
 
 <section class="merch-slider">
-    <div class="slider-container">
 
-        <div class="slides">
-            <img src="asset/images/merch1.jpg" alt="Merch Design 1">
-            <img src="asset/images/merch2.jpg" alt="Merch Design 2">
-            <img src="asset/images/merch3.jpg" alt="Merch Design 3">
-        </div>
+  <!-- MAIN SLIDER -->
+  <div class="slider-container">
+      <!-- Blurred background for side borders -->
+      <div class="slider-bg"></div>
 
-        <!-- Navigation -->
-        <button class="slider-btn prev">&#10094;</button>
-        <button class="slider-btn next">&#10095;</button>
+      <!-- Slides -->
+      <div class="slides">
+          <img src="/member_page/asset/images/merch1.jpg" alt="Merch Design 1">
+          <img src="/member_page/asset/images/merch2.JPEG" alt="Merch Design 2">
+          <img src="/member_page/asset/images/merch3.JPEG" alt="Merch Design 3">
+      </div>
 
-        <!-- Dots -->
-        <div class="slider-dots"></div>
+      <!-- Navigation -->
+      <button class="slider-btn prev">&#10094;</button>
+      <button class="slider-btn next">&#10095;</button>
 
-    </div>
+      <!-- Dots -->
+      <div class="slider-dots"></div>
+  </div>
 
-    <div class="merch-info">
-        <h2>Become a Member For Merch.<br><br>Everything is Designed By Our Design Chairs!</h2>
-    </div>
+</section>
+
+<section class="thumbnails-container">
+      <!-- THUMBNAILS BELOW SLIDER -->
+  <div class="thumbnails">
+      <img src="/member_page/asset/images/merch_shirt_front.png" data-index="0">
+      <img src="/member_page/asset/images/merch_shirt_back.png" data-index="1">
+      <img src="/member_page/asset/images/totebag.png" data-index="2">
+  </div>
+
+</section>
+
+<!-- IMAGE LIGHTBOX -->
+<div class="lightbox" id="lightbox">
+    <span class="lightbox-close">&times;</span>
+    <img class="lightbox-img" src="" alt="Enlarged merch">
+</div>
+
+<section class="thumbnails-container">
+    <h1>Our amazing Design Chairs created the designs for our merch.</h1>
+    <p>Become a member to get access to our Merch.
+    <br> Each membership gets an included choice of either a T-shirt or Totebag.
+    <br> Click the link above to become a Member today!
+    </p>
+ 
 </section>
 
     </main>
 
     <div id="footer"></div>
-    <script src ="../asset/js/include.js"></script>
-    <script src ="asset/js/script.js"></script> 
+
+    <script src="/global_asset/js/script.js"></script>
+    <script src="/member_page/asset/js/script.js"></script>
 </body>
 </html>

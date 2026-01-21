@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="asset/css/style.css">
+    <link rel="stylesheet" href="/vsa_page/asset/css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css" rel="stylesheet"/>
     <title>ABOUT US | UNCC VSA</title>
 </head>
-<body>
 
+<body>
     <div id="header"></div>
     
     <main>
@@ -20,17 +20,15 @@
         </div>
 
         <section class="about-hero">
-
-        <div class="hero-video">
-        <video
-            src="/vsa_page/asset/images/vn25recap.mp4"
-            autoplay
-            muted
-            playsinline
-            loop
-        ></video>
-         </div>
-
+            <div class="hero-video">
+                <video
+                    src="/vsa_page/asset/images/vn25recap.mp4"
+                    autoplay
+                    muted
+                    playsinline
+                    loop
+                ></video>
+            </div>
             <div class="container hero-content">
                 <div class="hero-text">
                     <h1>Welcome to VSA,<br><span>Become a Member Today!</span></h1>
@@ -38,12 +36,71 @@
                 </div>
                 <div class="hero-image">
                     <img
-                        src="asset/images/vsa-logo.png"
+                        src="/global_asset/images/vsa-logo.png"
                         alt="Blooming Lotus"
+                        class="rotating-lotus"
                     >
                 </div>
             </div>
         </section>
+
+<section class="events-section">
+  <h2 class="event-title">Upcoming Events</h2>
+
+  <div class="events-grid">
+    <!-- Event Card 1 -->
+<article class="event-card"
+  data-title="VSA Olympics"
+  data-date="FEB 20"
+  data-location="UNC Charlotte"
+  data-description="Come Play Sports"
+  date-link="https://www.instagram.com/unccvsa"
+>
+  <div class="event-bg" style="background-image:url('/vsa_page/asset/images/vsa_olympics.png')"></div>
+  <img src="/vsa_page/asset/images/vsa_olympics.png" alt="VSA Olympics">
+  <div class="event-info">
+    <span class="event-date">FEB 20</span>
+    <h3>VSA Olympics</h3>
+    <p>UNC Charlotte • 7:00 PM</p>
+  </div>
+</article>
+
+
+    <!-- Event Card 2 -->
+<article class="event-card"
+  data-title="VSA Olympics"
+  data-date="FEB 20"
+  data-location="UNC Charlotte"
+  data-description="Come Play Sports"
+>
+  <div class="event-bg" style="background-image:url('/vsa_page/asset/images/vsa_olympics.png')"></div>
+  <img src="/vsa_page/asset/images/vsa_olympics.png" alt="VSA Olympics">
+  <div class="event-info">
+    <span class="event-date">FEB 20</span>
+    <h3>VSA Olympics</h3>
+    <p>UNC Charlotte • 7:00 PM</p>
+  </div>
+</article>
+
+    <!-- Add more event cards here -->
+  </div>
+</section>
+
+<div class="lightbox" id="lightbox">
+  <div class="lightbox-content">
+    <span class="lightbox-close" id="lightboxClose">&times;</span>
+
+    <img class="lightbox-img" id="lightboxImg">
+
+    <aside class="lightbox-sidebar">
+      <h2 id="lightboxTitle"></h2>
+      <p class="lightbox-date" id="lightboxDate"></p>
+      <p class="lightbox-desc" id="lightboxDesc"></p>
+      <a id="eventLink" target="_blank">Register →</a>
+    </aside>
+  </div>
+</div>
+
 
         <section class="mission-section">
             <div class="container">
@@ -106,7 +163,8 @@
 
     <div id="footer"></div>    
 
-    <script src="../asset/js/include.js"></script>
-    <script src="asset/js/script.js"></script>
+    <script src="/global_asset/js/script.js"></script>
+    <script src="/vsa_page/asset/js/script.js"></script>
+
 </body>
 </html>
