@@ -42,11 +42,13 @@ const sponsors = [
     },
 
     {
-        name: "Nail Tek"
+        name: "Nail Tek",
+        image:"asset/images/nail_tek.png"
     },
 
     {
-        name: "Royal Nail"
+        name: "Royal Nail",
+        image: "asset/images/royal_nail.png"
     }
 
 ];
