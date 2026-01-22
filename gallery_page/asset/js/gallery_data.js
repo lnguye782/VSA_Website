@@ -141,7 +141,7 @@ if (galleryContainer && eventTitle) {
         document.getElementById('event-title').textContent = album.title;
         document.getElementById('event-desc').textContent = album.description;
 
-        const imagesToShow = Math.floor(album.count / 4);
+        const imagesToShow = Math.floor(album.count / 1);
 
         let imageNumbers = [];
         for (let i = 1; i <= album.count; i++) {

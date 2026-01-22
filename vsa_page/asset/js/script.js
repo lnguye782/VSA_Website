@@ -18,7 +18,8 @@ document.addEventListener("DOMContentLoaded", () => {
       // Text
       titleEl.textContent = card.dataset.title || "";
       dateEl.textContent = `${card.dataset.date || ""} • ${card.dataset.location || ""}`;
-      descEl.textContent = card.dataset.description || "";
+      descEl.innerHTML = card.dataset.description || "";
+
 
       // Optional link
       if (card.dataset.link) {
@@ -42,4 +43,5 @@ document.addEventListener("DOMContentLoaded", () => {
     lightbox.classList.remove("active");
     lightboxImg.src = "";
   }
+  
 });

@@ -27,6 +27,26 @@ const sponsors = [
         name: "Pho University",
         image: "asset/images/pho_university.png",
         link: "https://www.phoatuni.com/"
+    },
+
+    {
+        name: "Vietnamese Association of Charlotte",
+        image: "asset/images/vietnamese_association_of_charlotte.png",
+        link: "https://www.vietcharlotte.org/"
+    },
+
+    {
+        name: "Project SOL",
+        image:"asset/images/project_sol.png",
+        link: "https://projectsol.org/"
+    },
+
+    {
+        name: "Nail Tek"
+    },
+
+    {
+        name: "Royal Nail"
     }
 
 ];
