@@ -653,7 +653,7 @@ main {
 }
 
 .membership-section {
-    padding: 6rem 0;
+    padding: 4rem 0;
     background-color: #f3f4f6;
     position: relative;
 }
@@ -733,6 +733,11 @@ main {
     background-color: var(--primary-color);
     transform: scale(1.05);
     box-shadow: 0 10px 20px rgba(31, 212, 77, 0.4);
+}
+
+.join-section {
+    padding: 4rem 0;
+    background-color: #ffffff;
 }
 
 footer {
