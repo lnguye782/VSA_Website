@@ -19,7 +19,7 @@ const albums = {
         title: "Royal Cafe",
         caterogy: "GBM",
         description: "Royal Cafe came alive with dares, elegance and a court full of supporters who made the night unforgettable!",
-        count: 304,
+        count: 31,
         year:"2025_2026"
     },
 
