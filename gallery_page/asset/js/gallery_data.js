@@ -39,6 +39,14 @@ const albums = {
         year:"2025_2026"
     },
 
+    "2025_vietnight": {
+        title: "Tangled Roots",
+        caterogy: "Vietnight",
+        description: "Welcome to our 11th Annual Vietnight Photo Gallery!",
+        count: 465,
+        year:"2025_2026"
+    },
+
     "2024_viet_night": {
         title: "Lanterns of Legacy",
         caterogy: "VietNight",
