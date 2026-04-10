@@ -400,6 +400,178 @@ const boardData = {
             },
         ],
     },
+
+    "2022-2023": {
+        core: [
+            {
+                name: "Kaitlyn Van",
+                role: "President",
+                image: "asset/images/eboard/2022_2023/kaitlyn.jpg"
+            },
+
+            {
+                name: "April Luong",
+                role: "Internal Vice President",
+                image: "asset/images/eboard/2022_2023/april.jpg"
+            },
+
+            {
+                name: "Thi Le",
+                role: "External Vice President",
+                image: "asset/images/eboard/2022_2023/thi.jpg"
+            },
+
+            {
+                name: "Brandon Ngo",
+                role: "Secretary",
+                image: "asset/images/eboard/2022_2023/brandon_ngo.jpg"
+            },
+
+            {
+                name: "Tam Nguyen",
+                role: "Treasurer",
+                image: "asset/images/eboard/2022_2023/tam.jpg"
+            },
+        ],
+
+        event: [
+            {
+                name: "Phung Nguyen",
+                role: "Culture Chair",
+                image: "asset/images/eboard/2022_2023/phung.jpg",
+            },
+
+            {
+                name: "Joseph Nguyen",
+                role: "Community Outreach Director",
+                image: "asset/images/eboard/2022_2023/joseph.jpg",
+            },
+
+            {
+                name: "Kevin Le",
+                role: "Co-Event Coordinator",
+                image: "asset/images/eboard/2022_2023/kevin.jpg",
+            },
+
+            {
+                name: "Justin Ar",
+                role: "Co-Event Coordinator",
+                image: "asset/images/eboard/2022_2023/justin.jpg",
+            },
+        ],
+
+        media: [
+            {
+                name: "Brandon Nguyen",
+                role: "Photography Media Director",
+                image: "asset/images/eboard/2022_2023/brandon_nguyen.jpg"
+            },
+
+            {
+                name: "Peter Tran",
+                role: "Videography Media Director",
+                image: "asset/images/eboard/2022_2023/peter.jpg"
+            },
+
+            {
+                name: "Linh Huynh",
+                role: "Co-Marketing Director",
+                image: "asset/images/eboard/2022_2023/linh.jpg"
+            },
+
+            {
+                name: "Rita Nguyen",
+                role: "Co-Marketing Director",
+                image: "asset/images/eboard/2022_2023/rita.jpg"
+            },
+
+            {
+                name: "Sarah Nguyen",
+                role: "Design Chair",
+                image: "asset/images/eboard/2022_2023/sarah.jpg",
+            },
+        ],
+
+        intern: [
+            {
+                name: "Aleeza Cabahug",
+                role: "Intern",
+                image: "asset/images/eboard/2022_2023/aleeza.png"
+            },
+
+            {
+                name: "Allie Hartsfield",
+                role: "Intern",
+                image: "asset/images/eboard/2022_2023/allie.png"
+            },
+
+            {
+                name: "Anh Nguyen",
+                role: "Intern",
+                image: "asset/images/eboard/2022_2023/anh.png"
+            },
+
+            {
+                name: "Ben Mao",
+                role: "Intern",
+                image: "asset/images/eboard/2022_2023/ben.png"
+            },
+
+            {
+                name: "Eric Ho",
+                role: "Intern",
+                image: "asset/images/eboard/2022_2023/eric.png"
+            },
+
+            {
+                name: "Erica Ha",
+                role: "Intern",
+                image: "asset/images/eboard/2022_2023/erica.png"
+            },
+
+            {
+                name: "Hyebin Yu",
+                role: "Intern",
+                image: "asset/images/eboard/2022_2023/hyebin.png"
+            },
+
+            {
+                name: "Kayla Nguyen",
+                role: "Intern",
+                image: "asset/images/eboard/2022_2023/kayla.png"
+            },
+
+            {
+                name: "Long Nguyen",
+                role: "Intern",
+                image: "asset/images/eboard/2022_2023/long.png"
+            },
+
+            {
+                name: "Melissa Ka",
+                role: "Intern",
+                image: "asset/images/eboard/2022_2023/melissa.png"
+            },
+
+            {
+                name: "Sophia Park",
+                role: "Intern",
+                image: "asset/images/eboard/2022_2023/sophia.png"
+            },
+
+            {
+                name: "Thuy Nguyen",
+                role: "Intern",
+                image: "asset/images/eboard/2022_2023/thuy.png"
+            },
+
+            {
+                name: "Tina Nguyen",
+                role: "Intern",
+                image: "asset/images/eboard/2022_2023/tina.png"
+            },
+        ],
+    },
 }
 
 function loadBoard(year) {
