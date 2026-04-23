@@ -43,14 +43,15 @@ const sponsors = [
 
     {
         name: "Nail Tek",
-        image:"asset/images/nail_tek.png"
+        image:"asset/images/nail_tek.png",
+        link: "https://nailtekspacharlotte.com/"
     },
 
     {
         name: "Royal Nail",
-        image: "asset/images/royal_nail.png"
+        image: "asset/images/royal_nail.png",
+        link: "#"
     }
-
 ];
 
 const sponsorGrid = document.getElementById('sponsor-grid');
