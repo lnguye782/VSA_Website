@@ -3,7 +3,7 @@ const albums = {
         title: "Tangled Roots",
         caterogy: "VietNight",
         description: "🐲 Tangled Roots 🪷 Cội Nguồn 🌾 VSA presents…our 11th annual VietNight 💐 Our biggest annual event is more than just a memorable night, it’s a celebration of culture, talent and togetherness!",
-        count: 465,
+        count: 456,
         year: "2025_2026"
     },
     
