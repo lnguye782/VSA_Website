@@ -344,15 +344,17 @@ main {
     box-shadow: 0 10px 20px rgba(31, 212, 77, 0.4);
 }
 
-.business-sponsors {
-    padding: 5rem 0;
-    background-color: #ffffff;
+.year-selector-section {
+    background-color: #f3f4f6;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #e5e7eb;
 }
 
 .section-heading {
     text-align: center;
     font-size: 2.5rem;
-    margin-bottom: 3rem;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
     color: #111827;
     position: relative;
     display: inline-block;
@@ -368,6 +370,43 @@ main {
     background: var(--primary-color);
     margin: 0.5rem auto 0;
     border-radius: 2px;
+}
+
+.year-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.year-btn {
+    background: #ffffff;
+    border: 2px solid #e5e7eb;
+    padding: 0.75rem 2rem;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #6b7280;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.year-btn:hover {
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+    transform: translateY(-2px);
+}
+
+.year-btn.active {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: #ffffff;
+    box-shadow: 0 4px 10px rgba(31, 212, 77, 0.3);
+}
+
+.business-sponsors {
+    padding: 3rem 0;
+    background-color: #ffffff;
 }
 
 .sponsor-grid {
