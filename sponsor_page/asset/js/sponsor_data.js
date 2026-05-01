@@ -72,6 +72,12 @@ const boardData = {
             },
 
             {
+                name: "Bé Em Asian Kitchen",
+                image: "asset/images/be_em.png",
+                link: "https://be-em.com/"
+            },
+
+            {
                 name: "Central Tea House",
                 image: "asset/images/central_tea_house.png",
                 link: "https://www.instagram.com/central_tea_house/"
@@ -138,6 +144,12 @@ const boardData = {
             },
 
             {
+                name: "RuSan's Charlotte",
+                image: "asset/images/rusans_charlotte.png",
+                link: "https://rusans.com/"
+            },
+
+            {
                 name: "Seoul Poke Bowl",
                 image: "asset/images/seoul_poke_bowl.png",
                 link: "#"
@@ -147,6 +159,10 @@ const boardData = {
                 name: "Sweet Corner",
                 image: "asset/images/sweet_corner.png",
                 link: "https://www.1368sweetcornercafecharlotte.com/"
+            },
+
+            {
+                name: "T & T Accounting & Tax Services",
             },
 
             {
@@ -167,8 +183,113 @@ const boardData = {
                 link: "https://vivibubbleteaconcord.com/"
             },
         ],
+
+        family: [
+            {
+                name: "Aleeza Cabahug's Family",
+            },
+
+            {
+                name: "April Luong's Family",
+            },
+
+            {
+                name: "Brandon Ngo's Family",
+            },
+
+            {
+                name: "Dylan Nguyen's Family",
+            },
+
+            {
+                name: "Eric Ho's Family",
+            },
+
+            {
+                name: "Long Nguyen's Family",
+            },
+
+            {
+                name: "Thi Le's Family",
+            },
+        ],
     },
 
+    "2022-2023": {
+        sponsor: [
+            {
+                name: "Bánh Mì Brothers",
+                image: "asset/images/banh_mi_brothers.png",
+                link: "https://banhmibrothers.com/"
+            },
+
+            {
+                name: "Beard Papa's",
+                image: "asset/images/beard_papas.png",
+                link: "https://www.beardpapas.com/charlotte",
+            },
+
+            {
+                name: "Cosmo Nail Lounge",
+                image: "asset/images/cosmo_nail_lounge.png",
+                link: "https://www.facebook.com/cosmonaillounge20/"
+            },
+
+            {
+                name: "Crispy Bánh Mì",
+                image: "asset/images/crispy_banh_mi.png",
+                link: "https://www.crispybanhmi.com/"
+            },
+
+            {
+                name: "Milk Cha Cha",
+                image: "asset/images/milk_cha_cha.png",
+                link: "https://www.milkchachausa.com/"
+            },
+
+            {
+                name: "Ocha Time",
+                image: "asset/images/ocha_time.png",
+                link: "https://www.ochatimetea.com/"
+            },
+
+            {
+                name: "Phở Hòa",
+                image: "asset/images/pho_hoa.png",
+                link: "https://phohoa.com/"
+            },
+
+            {
+                name: "Phở @ Noda",
+                image: "asset/images/pho_noda.png",
+                link: "https://www.phoatnoda.com/"
+            },
+
+            {
+                name: "RuSan's Charlotte",
+                image: "asset/images/rusans_charlotte.png",
+                link: "https://rusans.com/"
+            },
+
+            {
+                name: "Seoul Poke Bowl",
+                image: "asset/images/seoul_poke_bowl.png",
+                link: "#"
+            },
+
+            {
+                name: "Sweet Corner",
+                image: "asset/images/sweet_corner.png",
+                link: "https://www.1368sweetcornercafecharlotte.com/"
+            },
+
+            {
+                name: "Tea Fusion Cafe",
+                image: "asset/images/tea_fusion_cafe.png",
+                link: "https://www.teafusioncafeuncc.com/"
+            },
+        ],
+    },
 }
 
 function loadBoard(year) {

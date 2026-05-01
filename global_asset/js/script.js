@@ -68,25 +68,25 @@ const searchIndex = [
     {
         title: "About Us", 
         url: "/vsa_page/index.html", 
-        keywords: "home vsa welcome main about mission history culture" 
+        keywords: "home vsa welcome main about mission history culture long hy" 
     },
 
     { 
         title: "Gallery", 
         url: "/gallery_page/index.html", 
-        keywords: "photos pictures images gallery memories albums" 
+        keywords: "photos pictures images gallery memories albums long hy" 
     },
 
     { 
         title: "E-Board", 
         url: "/eboard_page/index.html", 
-        keywords: "leaders team president eboard executive media event intern" 
+        keywords: "leaders team president eboard executive media event intern long hy" 
     },
 
     { 
         title: "Sponsors", 
         url: "/sponsor_page/index.html", 
-        keywords: "sponsors partners business donations support community" 
+        keywords: "sponsors partners business donations support community long hy" 
     },
 ];
 
