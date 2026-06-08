@@ -190,12 +190,16 @@ if (galleryContainer && eventTitle) {
 
         selectedNumbers.forEach(num => {
             const div = document.createElement('div');
-            div.classList.add('pin-item');
+            div.classList.add('pin-item', 'loading');
 
             const imgElement = document.createElement('img');
             imgElement.src = `/gallery_page/asset/images/gallery/${album.year}/${albumId}/${num}.jpg`;
             imgElement.alt = `${album.title} - Photo ${num}`;
             imgElement.loading = "lazy";
+
+            imgElement.onload = function() {
+                div.classList.remove('loading');
+            }
 
             imgElement.onclick = function() {
                 lightbox.style.display = "block";
